@@ -1,0 +1,33 @@
+- name: variable Demo
+  hosts: dev,test
+  gather_facts: false
+
+  vars:
+    opera: Level12
+
+  vars_prompt:
+  - name: opera
+    prompt: "Please enter value"
+    private: false
+  
+  vars_files:
+  - /home/student/police/outside_vars.yml
+
+  tasks:
+    - name: set the fact is System Variable
+      set_fact:
+        opera: Level19
+      
+    - name: Read External Variable file
+      ansible.builtin.include_vars:
+        file: vars_external.yml
+
+    - name: Print Variable 1
+      ansible.builtin.debug:
+        msg: "{{ opera }}"
+      vars:
+        opera: Level17
+
+    - name: Print Variable 2
+      ansible.builtin.debug:
+        msg: "{{ opera }} {{ users.bjones.first_name }} {{ users['bjones']['first_name'] }}"

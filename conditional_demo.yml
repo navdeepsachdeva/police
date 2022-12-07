@@ -1,0 +1,38 @@
+- name: Conditional  Play
+  hosts: servera
+  gather_facts: yes
+  become: true
+  vars_files:
+    - outside_vars.yml
+  vars:
+    os_list:
+    - Fedora
+    - RedHat
+    - Suse
+
+  tasks:
+    - name: Condition on loop value
+      debug:
+        msg: "{{ item }}"
+      loop: "{{ complex_list }}"
+      when: item.name == "laleh"
+
+    - name: Install web package
+      ansible.builtin.dnf:
+        name: httpd
+        state: present
+      register: laleh_out
+
+    - name: Print the captured output
+      debug:
+        msg: "{{ laleh_out }}"
+
+    - name: Start the service
+      ansible.builtin.service:
+        name: httpd
+        state: restarted
+      when:
+        - laleh_out.changed or youyou is not defined
+        - ansible_distribution in os_list
+        #- ansible_distribution == "RedHat"
+      #when: laleh_out.changed and ansible_distribution == "RedHat"

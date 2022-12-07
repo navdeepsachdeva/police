@@ -1,0 +1,20 @@
+- name: Dependency Task with register Without Handlers
+  hosts: servera
+  gather_facts: no
+  tasks:
+
+    - name: Install web package
+      ansible.builtin.dnf:
+        name: httpd
+        state: present
+      register: laleh_out
+
+    - name: Print the captured output
+      debug:
+        msg: "{{ laleh_out }}"
+
+    - name: Start the service
+      ansible.builtin.service:
+        name: httpd
+        state: restarted
+      when: laleh_out.changed

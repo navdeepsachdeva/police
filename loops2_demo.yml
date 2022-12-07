@@ -1,0 +1,60 @@
+- name: Loops Demo Playbook
+  hosts: servera
+  become: true
+  gather_facts: false
+  vars_files:
+    - outside_vars.yml
+  tasks:
+    - name: Print Simple List 1
+      debug:
+        msg: "{{ item }}"
+      with_items: "{{ simple_list }}"
+
+    - name: Print Simple List 2
+      debug:
+        msg: "{{ item }}"
+      with_list: "{{ simple_list }}"
+
+    - name: Print Simple DICT
+      debug:
+        msg: "{{ item }}"
+      with_dict: "{{ mydict }}"
+
+    - name: Print Simple List 3
+      debug:
+        msg: "{{ item }}"
+      loop: "{{ simple_list }}"
+
+
+    - name: Print Simple DICT 2
+      debug:
+        msg: "{{ item }}"
+      loop: "{{ mydict | list }}"
+
+    - name: Sequence using with_sequence
+      debug:
+        msg: "{{ item }}"
+      with_sequence: start=0 end=5 format=eth%x
+      
+
+    - name: Print lookup list
+      debug:
+        msg: "{{ item }}"
+      loop: "{{ lookup('list', simple_list) }}"
+
+
+    - name: Print lookup dict
+      debug:
+        msg: "{{ item }}"
+      loop: "{{ lookup('dict',mydict) }}"
+
+    - name: print lookup sequence
+      debug:
+        msg: "{{ item }}"
+      loop: "{{ query('sequence','start=0 end=5 format=eth%x') }}"
+
+
+    #- name: Print Simple List 4
+    #  debug:
+    #    msg: "{{ item }}"
+    #  loop: "{{ simple_list }}"

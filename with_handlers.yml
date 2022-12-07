@@ -1,0 +1,40 @@
+- name: Dependency Task with handlers Attribute
+  hosts: servera
+  gather_facts: no
+  become: true
+  tasks:
+
+    - name: Install web package
+      ansible.builtin.dnf:
+        name: httpd
+        state: present
+      notify:
+      - Start the service
+      - Handler 1
+
+    - name: Deploy the App
+      ansible.builtin.copy:
+        content: "My firat Page"
+        dest: /var/www/html/index.html
+        mode: 0644
+      notify:
+      - Start the service
+      - Handler 3
+
+  handlers:
+    - name: Handler 3
+      ansible.builtin.debug:
+        msg: "Some Handler 3"
+
+    - name: Handler 2
+      ansible.builtin.debug:
+        msg: "Some Handler 2"
+
+    - name: Handler 1
+      ansible.builtin.debug:
+        msg: "Some Handler 1"
+      
+    - name: Start the service
+      ansible.builtin.service:
+        name: httpd
+        state: restarted

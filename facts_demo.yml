@@ -1,0 +1,36 @@
+- name: Facts Demo
+  hosts: dev
+  gather_facts: false
+  
+  tasks:
+    - name: Collect Facts Manually
+      ansible.builtin.setup:
+        gather_subset: 
+          - all
+          #- '!hardware'
+
+    - name: Print facts
+      ansible.builtin.debug:
+        msg: >
+               "{{ ansible_distribution }}
+               {{ ansible_facts.distribution }}
+               {{ ansible_facts['distribution'] }}
+               {{ ansible_facts['distribution_version']  }}
+               {{ ansible_facts['date_time']['time']  }}
+               {{ ansible_facts['default_ipv4']['address']  }}
+               {{ ansible_facts['devices']['vda']['size']  }}
+               {{ ansible_facts['fqdn']  }}
+               {{ ansible_facts['hostname']  }}
+               {{ ansible_facts['kernel']  }}
+               {{ ansible_facts['memory_mb']['real']['free']  }}
+               {{ ansible_facts['product_version']  }}
+               {{ ansible_facts['python_version']  }}
+               {{ ansible_facts['ansible_local']['oslo']['dept_info']['dept_name']  }}
+               {{ ansible_facts['ansible_local']['oslo']['user_info']['emp_name']  }}
+               "
+
+    - name: stupid task
+      ansible.builtin.debug:
+        msg: "adfasd"
+      when: ansible_facts['ansible_local']['oslo']['dept_info']['dept_name'] == "police"
+      #when: ansible_facts['distribution'] == "Fedora"

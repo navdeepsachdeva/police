@@ -1,0 +1,33 @@
+- name: Loops Demo Playbook
+  hosts: servera
+  become: true
+  gather_facts: false
+  vars_files:
+    - outside_vars.yml
+  tasks:
+    - name: Print Simple List
+      debug:
+        msg: "{{ item }}"
+      loop: "{{ simple_list }}"
+
+    - name: Print complex List
+      debug:
+        msg: "{{ item.name }} ===== {{ item['company'] }}"
+      loop: "{{ complex_list }}"
+
+    #- name: Install packages
+    #  ansible.builtin.dnf:
+    #    name: "{{ item }}"
+    #    state: present
+    #  loop: "{{ mypackages }}"
+    
+    #- name: Install packages again
+    #  ansible.builtin.dnf:
+    #    name: "{{ mypackages }}"
+    #    state: present
+
+    #- name: Start the services
+    #  ansible.builtin.service:
+    #    name: "{{ item }}"
+    #    state: started
+    #  loop: "{{ myservices }}"

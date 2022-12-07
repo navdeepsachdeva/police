@@ -1,0 +1,38 @@
+opera: Level14
+
+users:
+  bjones:
+    first_name: Bob
+    last_name: Jones
+    home_dir: /users/bjones
+  acook:
+    first_name: Anne
+    last_name: Cook
+    home_dir: /users/acook
+
+mypackages:
+  - firewalld
+  - httpd
+
+myservices:
+  - firewalld
+  - httpd
+simple_list:
+- thomas
+- laleh
+
+complex_list:
+- name: thomas
+  company: c1
+- name: laleh
+  company: c2
+- name: frode
+  company: c2
+- name: marius
+  company: c1
+
+mydict:
+  thomas: c1
+  laleh: c2
+  frode: c2
+  marius: c1

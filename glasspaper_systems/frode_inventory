@@ -1,0 +1,31 @@
+
+
+## INI Format  ##
+
+
+serverd
+
+[control]
+workstation
+
+[dev]
+servera
+
+[test]
+serverb opera=Level8
+serverc
+
+[all:vars]
+opera=Level3
+
+
+
+
+[prod]
+172.25.250.12
+172.25.250.13
+
+[oslo:children]
+dev
+test
+

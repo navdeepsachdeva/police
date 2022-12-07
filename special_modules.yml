@@ -1,0 +1,13 @@
+- name: Special Modules
+  hosts: servera
+  gather_facts: no
+  tasks:
+  - name: Run a command
+    ansible.builtin.command: sleep 2
+    #ansible.builtin.command: tail -2 /etc/passwd
+
+  - name: Run a command with shell variables
+    ansible.builtin.shell: "tail -n 2 /etc/passwd"
+
+  #- name: Install Python
+  #  ansible.builtin.raw: dnf install -y python2 python3-dnf libselinux-python

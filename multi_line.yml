@@ -1,0 +1,30 @@
+- name: Long Lines/Multiple Lines Demo
+  hosts: servera
+  gather_facts: no
+
+  tasks:
+
+  - name: Long Line 1
+    ansible.builtin.copy:
+      content: "It is such a long line and got very difficult to handle , so i learned new way of separating lines, so that very readable, i am happy now"
+      dest: /tmp/file1
+
+  - name: Long Line 2
+    ansible.builtin.copy:
+      content: >
+            "It is such a long line,
+            got very difficult to handle,
+            so i learned new way of separating lines,
+            so that very readable,
+            i am happy now"
+      dest: /tmp/file2
+
+  - name: Long Line 3
+    ansible.builtin.copy:
+      content: |
+            "It is such a long line,
+            got very difficult to handle,
+            so i learned new way of separating lines,
+            so that very readable,
+            i am happy now"
+      dest: /tmp/file3
