@@ -1,0 +1,43 @@
+- name: Task Failure/ Unexpecpted output handling
+  hosts: servera
+  gather_facts: no
+  become: true
+  tasks:
+
+    #- name: Upgrade all packages
+    #  ansible.builtin.dnf:
+    #    name: "*"
+    #    state: latest
+
+    - name: Install web pack
+      ansible.builtin.dnf:
+        name: httpd
+        state: latest
+      register: capture
+      #failed_when: not capture.changed
+
+    #- name: Better than failed_when use fail module
+    #  fail:
+    #    msg: "Check you cache server"
+    #  when: not capture.changed
+
+    - name: Better than failed_when OR fail, use assert module
+      assert:
+        that:
+        - capture.changed
+        fail_msg: "Check you cache server"
+        success_msg: "Hurray Packes updated"
+
+    - name: Print revious output
+      debug:
+        var: capture
+    - name: Deploy the App
+      ansible.builtin.copy:
+        content: "My firat Page"
+        dest: /var/www/html/index.html
+        mode: 0644
+
+    - name: Start the service
+      ansible.builtin.service:
+        name: httpd
+        state: restarted

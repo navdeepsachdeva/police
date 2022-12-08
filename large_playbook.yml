@@ -1,0 +1,31 @@
+
+- name: Import a Variable Playbook
+  import_playbook: variable_demo.yml
+
+- name: Very Large Playbook
+  hosts: servera
+  gather_facts: no
+
+  tasks:
+  - name: Import a Task File
+    import_tasks: tasks_mail_server.yml
+    #include_tasks: tasks_mail_server.yml
+    when: youyou is defined
+
+  - name: Include a Task File
+    #import_tasks: tasks_oracle_server.yml
+    include_tasks: tasks_oracle_server.yml
+    when: youyou is defined
+
+  ## - name: Looping multiple task File
+  ##   #import_tasks: "{{ item }}"
+  ##   ## Loops only on include_tasks not import_tasks
+  ##   include_tasks: "{{ item }}"
+  ##   loop:
+  ##   - tasks_oracle_server.yml
+  ##   - tasks_mail_server.yml
+  ##   - tasks_web_server.yml
+  #
+
+- name: Import a Big Playbook
+  import_playbook: multiple_play.yml

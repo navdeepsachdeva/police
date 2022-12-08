@@ -1,0 +1,9 @@
+- name: Temaplte Information
+  hosts: all
+
+  tasks:
+  - name: Collect Info from Systems
+    template:
+      src: ./info_template.j2
+      dest: /tmp/info
+    when: inventory_hostname in groups["control"]

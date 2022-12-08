@@ -1,0 +1,47 @@
+- name: Use the Custom Roles
+  hosts: servera
+
+  pre_tasks:
+    - name: Create a user
+      ansible.builtin.user:
+        name: thomas
+        uid: 1100
+        comment: "Last user"
+      notify:
+      - user_created
+    - name: Inform Client about delay
+      ansible.builtin.command: sleep 4
+      notify:
+      - services_down
+
+  roles:
+  - role: web_server
+    get_content: "Hello Everyone from PLAYYYYY"
+
+  tasks:
+
+    - name: One more extra task
+      ansible.builtin.command: sleep 4
+      notify:
+      - extra_handler
+
+  post_tasks:
+    - name: Inform client about up service
+      ansible.builtin.command: sleep 4
+      notify:
+      - services_up
+
+  handlers:
+    - name: user_created
+      ansible.builtin.debug:
+        msg: "User Thomas created"
+    - name: extra_handler
+      ansible.builtin.debug:
+        msg: "Just extra cusion"
+
+    - name: services_down
+      ansible.builtin.debug:
+        msg: "FB down give rest yo phone and sleep"
+    - name: services_up
+      ansible.builtin.debug:
+        msg: "FB UP Pick phone and waste time"

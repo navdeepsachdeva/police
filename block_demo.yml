@@ -1,0 +1,56 @@
+- name: Deployment Playbook
+  hosts: servera
+  remote_user: devops
+  become: true
+  gather_facts: no
+  tasks:
+
+    #- name: Create a user
+    #  ansible.builtin.user:
+    #    name: thomas
+    #    uid: 1100
+    #    comment: "Last user"
+
+    - name: BLOCK of TASKS
+      block:
+        - name: Install web package
+          ansible.builtin.dnf:
+            name: httpd
+            state: present
+
+        - name: Open the Web Firewall Port
+          ansible.posix.firewalld:
+            service: http
+            permanent: true
+            state: enabled
+            immediate: true
+
+        - name: Deploy the App
+          ansible.builtin.copy:
+            content: "My firat Page"
+            dest: /var/www/html/index.html
+            mode: 0644
+        - name: Start the service
+          ansible.builtin.service:
+            name: httpd
+            state: started
+      when: meme is not defined
+      rescue:
+        - name: Uninstall packages
+          ansible.builtin.dnf:
+            name: httpd
+            state: absent
+            autoremove: true
+
+        - name: Remove Firewall Port
+          ansible.posix.firewalld:
+            service: http
+            permanent: true
+            state: disabled
+            immediate: true
+
+      always:
+        - name: examil to client
+          debug:
+            msg: "mail to client"
+      

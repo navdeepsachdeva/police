@@ -1,0 +1,5 @@
+---
+# defaults file for security_setup
+
+firewall_port: http
+firewall_state: enabled

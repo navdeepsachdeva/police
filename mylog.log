@@ -1,0 +1,1506 @@
+2022-12-07 14:39:39,334 p=16 u=root n=ansible | {"/usr/share/ansible/collections/ansible_collections": {"amazon.aws": {"version": "3.2.0"}, "ansible.controller": {"version": "4.2.1"}, "ansible.netcommon": {"version": "3.0.0"}, "ansible.network": {"version": "1.2.0"}, "ansible.posix": {"version": "1.3.0"}, "ansible.security": {"version": "1.0.0"}, "ansible.utils": {"version": "2.6.1"}, "ansible.windows": {"version": "1.9.0"}, "ansible.yang": {"version": "1.0.0"}, "arista.eos": {"version": "5.0.0"}, "cisco.asa": {"version": "3.0.0"}, "cisco.ios": {"version": "3.0.0"}, "cisco.iosxr": {"version": "3.0.0"}, "cisco.nxos": {"version": "3.0.0"}, "cloud.common": {"version": "2.1.1"}, "frr.frr": {"version": "2.0.0"}, "ibm.qradar": {"version": "2.0.0"}, "junipernetworks.junos": {"version": "3.0.0"}, "kubernetes.core": {"version": "2.2.3"}, "openvswitch.openvswitch": {"version": "2.1.0"}, "redhat.insights": {"version": "1.0.7"}, "redhat.openshift": {"version": "2.1.0"}, "redhat.rhv": {"version": "1.6.5"}, "redhat.satellite": {"version": "3.3.0"}, "servicenow.itsm": {"version": "1.3.3"}, "splunk.es": {"version": "2.0.0"}, "trendmicro.deepsec": {"version": "2.0.0"}, "vmware.vmware_rest": {"version": "2.1.5"}, "vyos.vyos": {"version": "3.0.0"}}}
+2022-12-07 14:39:41,782 p=21 u=root n=ansible | ERROR! Decryption failed (no vault secrets were found that could decrypt) on /home/student/police/bb.yml
+2022-12-07 14:39:57,166 p=16 u=root n=ansible | {"/usr/share/ansible/collections/ansible_collections": {"amazon.aws": {"version": "3.2.0"}, "ansible.controller": {"version": "4.2.1"}, "ansible.netcommon": {"version": "3.0.0"}, "ansible.network": {"version": "1.2.0"}, "ansible.posix": {"version": "1.3.0"}, "ansible.security": {"version": "1.0.0"}, "ansible.utils": {"version": "2.6.1"}, "ansible.windows": {"version": "1.9.0"}, "ansible.yang": {"version": "1.0.0"}, "arista.eos": {"version": "5.0.0"}, "cisco.asa": {"version": "3.0.0"}, "cisco.ios": {"version": "3.0.0"}, "cisco.iosxr": {"version": "3.0.0"}, "cisco.nxos": {"version": "3.0.0"}, "cloud.common": {"version": "2.1.1"}, "frr.frr": {"version": "2.0.0"}, "ibm.qradar": {"version": "2.0.0"}, "junipernetworks.junos": {"version": "3.0.0"}, "kubernetes.core": {"version": "2.2.3"}, "openvswitch.openvswitch": {"version": "2.1.0"}, "redhat.insights": {"version": "1.0.7"}, "redhat.openshift": {"version": "2.1.0"}, "redhat.rhv": {"version": "1.6.5"}, "redhat.satellite": {"version": "3.3.0"}, "servicenow.itsm": {"version": "1.3.3"}, "splunk.es": {"version": "2.0.0"}, "trendmicro.deepsec": {"version": "2.0.0"}, "vmware.vmware_rest": {"version": "2.1.5"}, "vyos.vyos": {"version": "3.0.0"}}}
+2022-12-07 14:39:59,954 p=21 u=root n=ansible | ERROR! A playbook must be a list of plays, got a <class 'ansible.parsing.yaml.objects.AnsibleUnicode'> instead
+
+The error appears to be in '/home/student/police/bb.yml': line 1, column 1, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+$ANSIBLE_VAULT;1.1;AES256
+^ here
+
+2022-12-08 03:50:41,330 p=2097 u=student n=ansible | - Role web_server was created successfully
+2022-12-08 09:01:50,139 p=16 u=root n=ansible | {"/usr/share/ansible/collections/ansible_collections": {"amazon.aws": {"version": "3.2.0"}, "ansible.controller": {"version": "4.2.1"}, "ansible.netcommon": {"version": "3.0.0"}, "ansible.network": {"version": "1.2.0"}, "ansible.posix": {"version": "1.3.0"}, "ansible.security": {"version": "1.0.0"}, "ansible.utils": {"version": "2.6.1"}, "ansible.windows": {"version": "1.9.0"}, "ansible.yang": {"version": "1.0.0"}, "arista.eos": {"version": "5.0.0"}, "cisco.asa": {"version": "3.0.0"}, "cisco.ios": {"version": "3.0.0"}, "cisco.iosxr": {"version": "3.0.0"}, "cisco.nxos": {"version": "3.0.0"}, "cloud.common": {"version": "2.1.1"}, "frr.frr": {"version": "2.0.0"}, "ibm.qradar": {"version": "2.0.0"}, "junipernetworks.junos": {"version": "3.0.0"}, "kubernetes.core": {"version": "2.2.3"}, "openvswitch.openvswitch": {"version": "2.1.0"}, "redhat.insights": {"version": "1.0.7"}, "redhat.openshift": {"version": "2.1.0"}, "redhat.rhv": {"version": "1.6.5"}, "redhat.satellite": {"version": "3.3.0"}, "servicenow.itsm": {"version": "1.3.3"}, "splunk.es": {"version": "2.0.0"}, "trendmicro.deepsec": {"version": "2.0.0"}, "vmware.vmware_rest": {"version": "2.1.5"}, "vyos.vyos": {"version": "3.0.0"}}}
+2022-12-08 09:01:51,796 p=21 u=root n=ansible | playbook: /home/student/police/use_roles.yml
+2022-12-08 09:01:51,796 p=21 u=root n=ansible |   play #1 (servera): Use the Custom Roles	TAGS: []
+2022-12-08 09:01:51,798 p=21 u=root n=ansible |     tasks:
+      web_server : Install web package	TAGS: []
+      web_server : Deploy the App	TAGS: []
+      web_server : Collect Info from Systems	TAGS: []
+
+2022-12-08 09:02:32,334 p=16 u=root n=ansible | {"/usr/share/ansible/collections/ansible_collections": {"amazon.aws": {"version": "3.2.0"}, "ansible.controller": {"version": "4.2.1"}, "ansible.netcommon": {"version": "3.0.0"}, "ansible.network": {"version": "1.2.0"}, "ansible.posix": {"version": "1.3.0"}, "ansible.security": {"version": "1.0.0"}, "ansible.utils": {"version": "2.6.1"}, "ansible.windows": {"version": "1.9.0"}, "ansible.yang": {"version": "1.0.0"}, "arista.eos": {"version": "5.0.0"}, "cisco.asa": {"version": "3.0.0"}, "cisco.ios": {"version": "3.0.0"}, "cisco.iosxr": {"version": "3.0.0"}, "cisco.nxos": {"version": "3.0.0"}, "cloud.common": {"version": "2.1.1"}, "frr.frr": {"version": "2.0.0"}, "ibm.qradar": {"version": "2.0.0"}, "junipernetworks.junos": {"version": "3.0.0"}, "kubernetes.core": {"version": "2.2.3"}, "openvswitch.openvswitch": {"version": "2.1.0"}, "redhat.insights": {"version": "1.0.7"}, "redhat.openshift": {"version": "2.1.0"}, "redhat.rhv": {"version": "1.6.5"}, "redhat.satellite": {"version": "3.3.0"}, "servicenow.itsm": {"version": "1.3.3"}, "splunk.es": {"version": "2.0.0"}, "trendmicro.deepsec": {"version": "2.0.0"}, "vmware.vmware_rest": {"version": "2.1.5"}, "vyos.vyos": {"version": "3.0.0"}}}
+2022-12-08 09:02:33,722 p=21 u=root n=ansible | PLAY [Use the Custom Roles] *********************************************************************
+2022-12-08 09:02:36,508 p=21 u=root n=ansible | Perform task: TASK: Gathering Facts (N)o/(y)es/(c)ontinue: **************************************
+2022-12-08 09:02:36,509 p=21 u=root n=ansible | TASK [Gathering Facts] **************************************************************************
+2022-12-08 09:02:38,320 p=21 u=root n=ansible | ok: [servera]
+2022-12-08 09:04:13,891 p=21 u=root n=ansible | Perform task: TASK: web_server : Install web package (N)o/(y)es/(c)ontinue: *********************
+2022-12-08 09:04:13,892 p=21 u=root n=ansible | TASK [web_server : Install web package] *********************************************************
+2022-12-08 09:04:17,649 p=21 u=root n=ansible | changed: [servera]
+2022-12-08 09:04:36,794 p=21 u=root n=ansible | Perform task: TASK: web_server : Deploy the App (N)o/(y)es/(c)ontinue: **************************
+2022-12-08 09:04:36,795 p=21 u=root n=ansible | TASK [web_server : Deploy the App] **************************************************************
+2022-12-08 09:04:37,942 p=21 u=root n=ansible | changed: [servera]
+2022-12-08 09:05:17,905 p=21 u=root n=ansible | Perform task: TASK: web_server : Collect Info from Systems (N)o/(y)es/(c)ontinue: ***************
+2022-12-08 09:05:17,906 p=21 u=root n=ansible | TASK [web_server : Collect Info from Systems] ***************************************************
+2022-12-08 09:05:18,767 p=21 u=root n=ansible | ERROR! The requested handler 'info_collected' was not found in either the main handlers list nor in the listening handlers list
+2022-12-08 09:06:35,256 p=16 u=root n=ansible | {"/usr/share/ansible/collections/ansible_collections": {"amazon.aws": {"version": "3.2.0"}, "ansible.controller": {"version": "4.2.1"}, "ansible.netcommon": {"version": "3.0.0"}, "ansible.network": {"version": "1.2.0"}, "ansible.posix": {"version": "1.3.0"}, "ansible.security": {"version": "1.0.0"}, "ansible.utils": {"version": "2.6.1"}, "ansible.windows": {"version": "1.9.0"}, "ansible.yang": {"version": "1.0.0"}, "arista.eos": {"version": "5.0.0"}, "cisco.asa": {"version": "3.0.0"}, "cisco.ios": {"version": "3.0.0"}, "cisco.iosxr": {"version": "3.0.0"}, "cisco.nxos": {"version": "3.0.0"}, "cloud.common": {"version": "2.1.1"}, "frr.frr": {"version": "2.0.0"}, "ibm.qradar": {"version": "2.0.0"}, "junipernetworks.junos": {"version": "3.0.0"}, "kubernetes.core": {"version": "2.2.3"}, "openvswitch.openvswitch": {"version": "2.1.0"}, "redhat.insights": {"version": "1.0.7"}, "redhat.openshift": {"version": "2.1.0"}, "redhat.rhv": {"version": "1.6.5"}, "redhat.satellite": {"version": "3.3.0"}, "servicenow.itsm": {"version": "1.3.3"}, "splunk.es": {"version": "2.0.0"}, "trendmicro.deepsec": {"version": "2.0.0"}, "vmware.vmware_rest": {"version": "2.1.5"}, "vyos.vyos": {"version": "3.0.0"}}}
+2022-12-08 09:06:36,635 p=21 u=root n=ansible | PLAY [Use the Custom Roles] *********************************************************************
+2022-12-08 09:06:37,640 p=21 u=root n=ansible | Perform task: TASK: Gathering Facts (N)o/(y)es/(c)ontinue: **************************************
+2022-12-08 09:06:37,641 p=21 u=root n=ansible | TASK [Gathering Facts] **************************************************************************
+2022-12-08 09:06:39,283 p=21 u=root n=ansible | ok: [servera]
+2022-12-08 09:06:40,920 p=21 u=root n=ansible | Perform task: TASK: web_server : Install web package (N)o/(y)es/(c)ontinue: *********************
+2022-12-08 09:06:40,921 p=21 u=root n=ansible | TASK [web_server : Install web package] *********************************************************
+2022-12-08 09:06:44,283 p=21 u=root n=ansible | changed: [servera]
+2022-12-08 09:06:45,824 p=21 u=root n=ansible | Perform task: TASK: web_server : Deploy the App (N)o/(y)es/(c)ontinue: **************************
+2022-12-08 09:06:45,825 p=21 u=root n=ansible | TASK [web_server : Deploy the App] **************************************************************
+2022-12-08 09:06:46,955 p=21 u=root n=ansible | changed: [servera]
+2022-12-08 09:06:57,583 p=21 u=root n=ansible | Perform task: TASK: web_server : Collect Info from Systems (N)o/(y)es/(c)ontinue: ***************
+2022-12-08 09:06:57,584 p=21 u=root n=ansible | TASK [web_server : Collect Info from Systems] ***************************************************
+2022-12-08 09:06:58,432 p=21 u=root n=ansible | changed: [servera]
+2022-12-08 09:06:58,458 p=21 u=root n=ansible | RUNNING HANDLER [web_server : Handler 3] ********************************************************
+2022-12-08 09:06:58,506 p=21 u=root n=ansible | ok: [servera] => {
+    "msg": "Some Handler 3"
+}
+2022-12-08 09:06:58,507 p=21 u=root n=ansible | RUNNING HANDLER [web_server : Handler 1] ********************************************************
+2022-12-08 09:06:58,555 p=21 u=root n=ansible | ok: [servera] => {
+    "msg": "Some Handler 1"
+}
+2022-12-08 09:06:58,556 p=21 u=root n=ansible | RUNNING HANDLER [web_server : Start the service] ************************************************
+2022-12-08 09:06:59,586 p=21 u=root n=ansible | changed: [servera]
+2022-12-08 09:06:59,587 p=21 u=root n=ansible | RUNNING HANDLER [web_server : info_collected] ***************************************************
+2022-12-08 09:06:59,633 p=21 u=root n=ansible | ok: [servera] => {
+    "msg": "facts Informqation Collcted"
+}
+2022-12-08 09:06:59,649 p=21 u=root n=ansible | PLAY RECAP **************************************************************************************
+2022-12-08 09:06:59,649 p=21 u=root n=ansible | servera                    : ok=8    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-12-08 04:08:44,399 p=2955 u=student n=ansible | - Role security_setup was created successfully
+2022-12-08 09:18:22,078 p=16 u=root n=ansible | {"/usr/share/ansible/collections/ansible_collections": {"amazon.aws": {"version": "3.2.0"}, "ansible.controller": {"version": "4.2.1"}, "ansible.netcommon": {"version": "3.0.0"}, "ansible.network": {"version": "1.2.0"}, "ansible.posix": {"version": "1.3.0"}, "ansible.security": {"version": "1.0.0"}, "ansible.utils": {"version": "2.6.1"}, "ansible.windows": {"version": "1.9.0"}, "ansible.yang": {"version": "1.0.0"}, "arista.eos": {"version": "5.0.0"}, "cisco.asa": {"version": "3.0.0"}, "cisco.ios": {"version": "3.0.0"}, "cisco.iosxr": {"version": "3.0.0"}, "cisco.nxos": {"version": "3.0.0"}, "cloud.common": {"version": "2.1.1"}, "frr.frr": {"version": "2.0.0"}, "ibm.qradar": {"version": "2.0.0"}, "junipernetworks.junos": {"version": "3.0.0"}, "kubernetes.core": {"version": "2.2.3"}, "openvswitch.openvswitch": {"version": "2.1.0"}, "redhat.insights": {"version": "1.0.7"}, "redhat.openshift": {"version": "2.1.0"}, "redhat.rhv": {"version": "1.6.5"}, "redhat.satellite": {"version": "3.3.0"}, "servicenow.itsm": {"version": "1.3.3"}, "splunk.es": {"version": "2.0.0"}, "trendmicro.deepsec": {"version": "2.0.0"}, "vmware.vmware_rest": {"version": "2.1.5"}, "vyos.vyos": {"version": "3.0.0"}}}
+2022-12-08 09:18:23,445 p=21 u=root n=ansible | playbook: /home/student/police/use_roles.yml
+2022-12-08 09:18:23,446 p=21 u=root n=ansible |   play #1 (servera): Use the Custom Roles	TAGS: []
+2022-12-08 09:18:23,449 p=21 u=root n=ansible |     tasks:
+      security_setup : Install Firewall package	TAGS: []
+      security_setup : Open the Web Firewall Port	TAGS: []
+      web_server : Install web package	TAGS: []
+      web_server : Deploy the App	TAGS: []
+      web_server : Collect Info from Systems	TAGS: []
+
+2022-12-08 09:20:36,456 p=16 u=root n=ansible | {"/usr/share/ansible/collections/ansible_collections": {"amazon.aws": {"version": "3.2.0"}, "ansible.controller": {"version": "4.2.1"}, "ansible.netcommon": {"version": "3.0.0"}, "ansible.network": {"version": "1.2.0"}, "ansible.posix": {"version": "1.3.0"}, "ansible.security": {"version": "1.0.0"}, "ansible.utils": {"version": "2.6.1"}, "ansible.windows": {"version": "1.9.0"}, "ansible.yang": {"version": "1.0.0"}, "arista.eos": {"version": "5.0.0"}, "cisco.asa": {"version": "3.0.0"}, "cisco.ios": {"version": "3.0.0"}, "cisco.iosxr": {"version": "3.0.0"}, "cisco.nxos": {"version": "3.0.0"}, "cloud.common": {"version": "2.1.1"}, "frr.frr": {"version": "2.0.0"}, "ibm.qradar": {"version": "2.0.0"}, "junipernetworks.junos": {"version": "3.0.0"}, "kubernetes.core": {"version": "2.2.3"}, "openvswitch.openvswitch": {"version": "2.1.0"}, "redhat.insights": {"version": "1.0.7"}, "redhat.openshift": {"version": "2.1.0"}, "redhat.rhv": {"version": "1.6.5"}, "redhat.satellite": {"version": "3.3.0"}, "servicenow.itsm": {"version": "1.3.3"}, "splunk.es": {"version": "2.0.0"}, "trendmicro.deepsec": {"version": "2.0.0"}, "vmware.vmware_rest": {"version": "2.1.5"}, "vyos.vyos": {"version": "3.0.0"}}}
+2022-12-08 09:20:37,827 p=21 u=root n=ansible | playbook: /home/student/police/use_roles.yml
+2022-12-08 09:20:37,827 p=21 u=root n=ansible |   play #1 (servera): Use the Custom Roles	TAGS: []
+2022-12-08 09:20:37,829 p=21 u=root n=ansible |     tasks:
+      security_setup : Install Firewall package	TAGS: []
+      security_setup : Open the Web Firewall Port	TAGS: []
+      web_server : Install web package	TAGS: []
+      web_server : Deploy the App	TAGS: []
+      web_server : Collect Info from Systems	TAGS: []
+
+2022-12-08 09:41:01,073 p=16 u=root n=ansible | {"/usr/share/ansible/collections/ansible_collections": {"amazon.aws": {"version": "3.2.0"}, "ansible.controller": {"version": "4.2.1"}, "ansible.netcommon": {"version": "3.0.0"}, "ansible.network": {"version": "1.2.0"}, "ansible.posix": {"version": "1.3.0"}, "ansible.security": {"version": "1.0.0"}, "ansible.utils": {"version": "2.6.1"}, "ansible.windows": {"version": "1.9.0"}, "ansible.yang": {"version": "1.0.0"}, "arista.eos": {"version": "5.0.0"}, "cisco.asa": {"version": "3.0.0"}, "cisco.ios": {"version": "3.0.0"}, "cisco.iosxr": {"version": "3.0.0"}, "cisco.nxos": {"version": "3.0.0"}, "cloud.common": {"version": "2.1.1"}, "frr.frr": {"version": "2.0.0"}, "ibm.qradar": {"version": "2.0.0"}, "junipernetworks.junos": {"version": "3.0.0"}, "kubernetes.core": {"version": "2.2.3"}, "openvswitch.openvswitch": {"version": "2.1.0"}, "redhat.insights": {"version": "1.0.7"}, "redhat.openshift": {"version": "2.1.0"}, "redhat.rhv": {"version": "1.6.5"}, "redhat.satellite": {"version": "3.3.0"}, "servicenow.itsm": {"version": "1.3.3"}, "splunk.es": {"version": "2.0.0"}, "trendmicro.deepsec": {"version": "2.0.0"}, "vmware.vmware_rest": {"version": "2.1.5"}, "vyos.vyos": {"version": "3.0.0"}}}
+2022-12-08 09:41:02,570 p=21 u=root n=ansible | playbook: /home/student/police/use_roles.yml
+2022-12-08 09:41:02,570 p=21 u=root n=ansible |   play #1 (servera): Use the Custom Roles	TAGS: []
+2022-12-08 09:41:02,572 p=21 u=root n=ansible |     tasks:
+      security_setup : Install Firewall package	TAGS: []
+      security_setup : Open the Web Firewall Port	TAGS: []
+      web_server : Install web package	TAGS: []
+      web_server : Deploy the App	TAGS: []
+      web_server : Collect Info from Systems	TAGS: []
+
+2022-12-08 04:41:42,326 p=3451 u=student n=ansible | - Role mail_setup was created successfully
+2022-12-08 09:44:39,700 p=16 u=root n=ansible | {"/usr/share/ansible/collections/ansible_collections": {"amazon.aws": {"version": "3.2.0"}, "ansible.controller": {"version": "4.2.1"}, "ansible.netcommon": {"version": "3.0.0"}, "ansible.network": {"version": "1.2.0"}, "ansible.posix": {"version": "1.3.0"}, "ansible.security": {"version": "1.0.0"}, "ansible.utils": {"version": "2.6.1"}, "ansible.windows": {"version": "1.9.0"}, "ansible.yang": {"version": "1.0.0"}, "arista.eos": {"version": "5.0.0"}, "cisco.asa": {"version": "3.0.0"}, "cisco.ios": {"version": "3.0.0"}, "cisco.iosxr": {"version": "3.0.0"}, "cisco.nxos": {"version": "3.0.0"}, "cloud.common": {"version": "2.1.1"}, "frr.frr": {"version": "2.0.0"}, "ibm.qradar": {"version": "2.0.0"}, "junipernetworks.junos": {"version": "3.0.0"}, "kubernetes.core": {"version": "2.2.3"}, "openvswitch.openvswitch": {"version": "2.1.0"}, "redhat.insights": {"version": "1.0.7"}, "redhat.openshift": {"version": "2.1.0"}, "redhat.rhv": {"version": "1.6.5"}, "redhat.satellite": {"version": "3.3.0"}, "servicenow.itsm": {"version": "1.3.3"}, "splunk.es": {"version": "2.0.0"}, "trendmicro.deepsec": {"version": "2.0.0"}, "vmware.vmware_rest": {"version": "2.1.5"}, "vyos.vyos": {"version": "3.0.0"}}}
+2022-12-08 09:44:41,077 p=21 u=root n=ansible | playbook: /home/student/police/use_roles.yml
+2022-12-08 09:44:41,077 p=21 u=root n=ansible |   play #1 (servera): Use the Custom Roles	TAGS: []
+2022-12-08 09:44:41,080 p=21 u=root n=ansible |     tasks:
+      mail_setup : Mail Server Task 1	TAGS: []
+      mail_setup : Mail Server Task 2	TAGS: []
+      security_setup : Install Firewall package	TAGS: []
+      security_setup : Open the Web Firewall Port	TAGS: []
+      web_server : Install web package	TAGS: []
+      web_server : Deploy the App	TAGS: []
+      web_server : Collect Info from Systems	TAGS: []
+
+2022-12-08 09:49:59,571 p=16 u=root n=ansible | {"/usr/share/ansible/collections/ansible_collections": {"amazon.aws": {"version": "3.2.0"}, "ansible.controller": {"version": "4.2.1"}, "ansible.netcommon": {"version": "3.0.0"}, "ansible.network": {"version": "1.2.0"}, "ansible.posix": {"version": "1.3.0"}, "ansible.security": {"version": "1.0.0"}, "ansible.utils": {"version": "2.6.1"}, "ansible.windows": {"version": "1.9.0"}, "ansible.yang": {"version": "1.0.0"}, "arista.eos": {"version": "5.0.0"}, "cisco.asa": {"version": "3.0.0"}, "cisco.ios": {"version": "3.0.0"}, "cisco.iosxr": {"version": "3.0.0"}, "cisco.nxos": {"version": "3.0.0"}, "cloud.common": {"version": "2.1.1"}, "frr.frr": {"version": "2.0.0"}, "ibm.qradar": {"version": "2.0.0"}, "junipernetworks.junos": {"version": "3.0.0"}, "kubernetes.core": {"version": "2.2.3"}, "openvswitch.openvswitch": {"version": "2.1.0"}, "redhat.insights": {"version": "1.0.7"}, "redhat.openshift": {"version": "2.1.0"}, "redhat.rhv": {"version": "1.6.5"}, "redhat.satellite": {"version": "3.3.0"}, "servicenow.itsm": {"version": "1.3.3"}, "splunk.es": {"version": "2.0.0"}, "trendmicro.deepsec": {"version": "2.0.0"}, "vmware.vmware_rest": {"version": "2.1.5"}, "vyos.vyos": {"version": "3.0.0"}}}
+2022-12-08 09:50:00,946 p=21 u=root n=ansible | PLAY [Dependency Task with handlers Attribute] ***********************************
+2022-12-08 09:50:05,438 p=21 u=root n=ansible | Perform task: TASK: Install web package (N)o/(y)es/(c)ontinue: *******************
+2022-12-08 09:50:05,439 p=21 u=root n=ansible | TASK [Install web package] *******************************************************
+2022-12-08 09:50:09,304 p=21 u=root n=ansible | changed: [servera]
+2022-12-08 09:50:20,350 p=21 u=root n=ansible | Perform task: TASK: Deploy the App (N)o/(y)es/(c)ontinue: ************************
+2022-12-08 09:50:20,352 p=21 u=root n=ansible | TASK [Deploy the App] ************************************************************
+2022-12-08 09:50:21,501 p=21 u=root n=ansible | changed: [servera]
+2022-12-08 09:50:21,511 p=21 u=root n=ansible | RUNNING HANDLER [Handler 3] ******************************************************
+2022-12-08 09:50:21,554 p=21 u=root n=ansible | ok: [servera] => {
+    "msg": "Some Handler 3"
+}
+2022-12-08 09:50:21,555 p=21 u=root n=ansible | RUNNING HANDLER [Handler 1] ******************************************************
+2022-12-08 09:50:21,598 p=21 u=root n=ansible | ok: [servera] => {
+    "msg": "Some Handler 1"
+}
+2022-12-08 09:50:21,599 p=21 u=root n=ansible | RUNNING HANDLER [Start the service] **********************************************
+2022-12-08 09:50:23,338 p=21 u=root n=ansible | changed: [servera]
+2022-12-08 09:50:23,350 p=21 u=root n=ansible | PLAY RECAP ***********************************************************************
+2022-12-08 09:50:23,350 p=21 u=root n=ansible | servera                    : ok=5    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-12-08 09:50:43,092 p=16 u=root n=ansible | {"/usr/share/ansible/collections/ansible_collections": {"amazon.aws": {"version": "3.2.0"}, "ansible.controller": {"version": "4.2.1"}, "ansible.netcommon": {"version": "3.0.0"}, "ansible.network": {"version": "1.2.0"}, "ansible.posix": {"version": "1.3.0"}, "ansible.security": {"version": "1.0.0"}, "ansible.utils": {"version": "2.6.1"}, "ansible.windows": {"version": "1.9.0"}, "ansible.yang": {"version": "1.0.0"}, "arista.eos": {"version": "5.0.0"}, "cisco.asa": {"version": "3.0.0"}, "cisco.ios": {"version": "3.0.0"}, "cisco.iosxr": {"version": "3.0.0"}, "cisco.nxos": {"version": "3.0.0"}, "cloud.common": {"version": "2.1.1"}, "frr.frr": {"version": "2.0.0"}, "ibm.qradar": {"version": "2.0.0"}, "junipernetworks.junos": {"version": "3.0.0"}, "kubernetes.core": {"version": "2.2.3"}, "openvswitch.openvswitch": {"version": "2.1.0"}, "redhat.insights": {"version": "1.0.7"}, "redhat.openshift": {"version": "2.1.0"}, "redhat.rhv": {"version": "1.6.5"}, "redhat.satellite": {"version": "3.3.0"}, "servicenow.itsm": {"version": "1.3.3"}, "splunk.es": {"version": "2.0.0"}, "trendmicro.deepsec": {"version": "2.0.0"}, "vmware.vmware_rest": {"version": "2.1.5"}, "vyos.vyos": {"version": "3.0.0"}}}
+2022-12-08 09:50:44,461 p=21 u=root n=ansible | PLAY [Dependency Task with handlers Attribute] ***********************************
+2022-12-08 09:50:45,774 p=21 u=root n=ansible | Perform task: TASK: Install web package (N)o/(y)es/(c)ontinue: *******************
+2022-12-08 09:50:45,775 p=21 u=root n=ansible | TASK [Install web package] *******************************************************
+2022-12-08 09:50:47,376 p=21 u=root n=ansible | ok: [servera]
+2022-12-08 09:50:47,387 p=21 u=root n=ansible | TASK [Deploy the App] ************************************************************
+2022-12-08 09:50:48,421 p=21 u=root n=ansible | ok: [servera]
+2022-12-08 09:50:48,442 p=21 u=root n=ansible | PLAY RECAP ***********************************************************************
+2022-12-08 09:50:48,442 p=21 u=root n=ansible | servera                    : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-12-08 09:51:13,064 p=16 u=root n=ansible | {"/usr/share/ansible/collections/ansible_collections": {"amazon.aws": {"version": "3.2.0"}, "ansible.controller": {"version": "4.2.1"}, "ansible.netcommon": {"version": "3.0.0"}, "ansible.network": {"version": "1.2.0"}, "ansible.posix": {"version": "1.3.0"}, "ansible.security": {"version": "1.0.0"}, "ansible.utils": {"version": "2.6.1"}, "ansible.windows": {"version": "1.9.0"}, "ansible.yang": {"version": "1.0.0"}, "arista.eos": {"version": "5.0.0"}, "cisco.asa": {"version": "3.0.0"}, "cisco.ios": {"version": "3.0.0"}, "cisco.iosxr": {"version": "3.0.0"}, "cisco.nxos": {"version": "3.0.0"}, "cloud.common": {"version": "2.1.1"}, "frr.frr": {"version": "2.0.0"}, "ibm.qradar": {"version": "2.0.0"}, "junipernetworks.junos": {"version": "3.0.0"}, "kubernetes.core": {"version": "2.2.3"}, "openvswitch.openvswitch": {"version": "2.1.0"}, "redhat.insights": {"version": "1.0.7"}, "redhat.openshift": {"version": "2.1.0"}, "redhat.rhv": {"version": "1.6.5"}, "redhat.satellite": {"version": "3.3.0"}, "servicenow.itsm": {"version": "1.3.3"}, "splunk.es": {"version": "2.0.0"}, "trendmicro.deepsec": {"version": "2.0.0"}, "vmware.vmware_rest": {"version": "2.1.5"}, "vyos.vyos": {"version": "3.0.0"}}}
+2022-12-08 09:51:14,445 p=21 u=root n=ansible | PLAY [Dependency Task with handlers Attribute] ***********************************
+2022-12-08 09:51:16,885 p=21 u=root n=ansible | Perform task: TASK: Install web package (N)o/(y)es/(c)ontinue: *******************
+2022-12-08 09:51:16,886 p=21 u=root n=ansible | TASK [Install web package] *******************************************************
+2022-12-08 09:51:18,467 p=21 u=root n=ansible | ok: [servera]
+2022-12-08 09:51:18,478 p=21 u=root n=ansible | TASK [Deploy the App] ************************************************************
+2022-12-08 09:51:19,564 p=21 u=root n=ansible | changed: [servera]
+2022-12-08 09:51:19,575 p=21 u=root n=ansible | RUNNING HANDLER [Handler 3] ******************************************************
+2022-12-08 09:51:19,618 p=21 u=root n=ansible | ok: [servera] => {
+    "msg": "Some Handler 3"
+}
+2022-12-08 09:51:19,619 p=21 u=root n=ansible | RUNNING HANDLER [Start the service] **********************************************
+2022-12-08 09:51:22,349 p=21 u=root n=ansible | changed: [servera]
+2022-12-08 09:51:22,361 p=21 u=root n=ansible | PLAY RECAP ***********************************************************************
+2022-12-08 09:51:22,361 p=21 u=root n=ansible | servera                    : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-12-08 09:52:38,098 p=16 u=root n=ansible | {"/usr/share/ansible/collections/ansible_collections": {"amazon.aws": {"version": "3.2.0"}, "ansible.controller": {"version": "4.2.1"}, "ansible.netcommon": {"version": "3.0.0"}, "ansible.network": {"version": "1.2.0"}, "ansible.posix": {"version": "1.3.0"}, "ansible.security": {"version": "1.0.0"}, "ansible.utils": {"version": "2.6.1"}, "ansible.windows": {"version": "1.9.0"}, "ansible.yang": {"version": "1.0.0"}, "arista.eos": {"version": "5.0.0"}, "cisco.asa": {"version": "3.0.0"}, "cisco.ios": {"version": "3.0.0"}, "cisco.iosxr": {"version": "3.0.0"}, "cisco.nxos": {"version": "3.0.0"}, "cloud.common": {"version": "2.1.1"}, "frr.frr": {"version": "2.0.0"}, "ibm.qradar": {"version": "2.0.0"}, "junipernetworks.junos": {"version": "3.0.0"}, "kubernetes.core": {"version": "2.2.3"}, "openvswitch.openvswitch": {"version": "2.1.0"}, "redhat.insights": {"version": "1.0.7"}, "redhat.openshift": {"version": "2.1.0"}, "redhat.rhv": {"version": "1.6.5"}, "redhat.satellite": {"version": "3.3.0"}, "servicenow.itsm": {"version": "1.3.3"}, "splunk.es": {"version": "2.0.0"}, "trendmicro.deepsec": {"version": "2.0.0"}, "vmware.vmware_rest": {"version": "2.1.5"}, "vyos.vyos": {"version": "3.0.0"}}}
+2022-12-08 09:52:39,468 p=21 u=root n=ansible | playbook: /home/student/police/use_roles.yml
+2022-12-08 09:52:39,468 p=21 u=root n=ansible |   play #1 (servera): Use the Custom Roles	TAGS: []
+2022-12-08 09:52:39,471 p=21 u=root n=ansible |     tasks:
+      mail_setup : Mail Server Task 1	TAGS: []
+      mail_setup : Mail Server Task 2	TAGS: []
+      security_setup : Install Firewall package	TAGS: []
+      security_setup : Open the Web Firewall Port	TAGS: []
+      web_server : Install web package	TAGS: []
+      web_server : Deploy the App	TAGS: []
+      web_server : Collect Info from Systems	TAGS: []
+      Create a user	TAGS: []
+      One more extra task	TAGS: []
+
+2022-12-08 10:04:12,536 p=16 u=root n=ansible | {"/usr/share/ansible/collections/ansible_collections": {"amazon.aws": {"version": "3.2.0"}, "ansible.controller": {"version": "4.2.1"}, "ansible.netcommon": {"version": "3.0.0"}, "ansible.network": {"version": "1.2.0"}, "ansible.posix": {"version": "1.3.0"}, "ansible.security": {"version": "1.0.0"}, "ansible.utils": {"version": "2.6.1"}, "ansible.windows": {"version": "1.9.0"}, "ansible.yang": {"version": "1.0.0"}, "arista.eos": {"version": "5.0.0"}, "cisco.asa": {"version": "3.0.0"}, "cisco.ios": {"version": "3.0.0"}, "cisco.iosxr": {"version": "3.0.0"}, "cisco.nxos": {"version": "3.0.0"}, "cloud.common": {"version": "2.1.1"}, "frr.frr": {"version": "2.0.0"}, "ibm.qradar": {"version": "2.0.0"}, "junipernetworks.junos": {"version": "3.0.0"}, "kubernetes.core": {"version": "2.2.3"}, "openvswitch.openvswitch": {"version": "2.1.0"}, "redhat.insights": {"version": "1.0.7"}, "redhat.openshift": {"version": "2.1.0"}, "redhat.rhv": {"version": "1.6.5"}, "redhat.satellite": {"version": "3.3.0"}, "servicenow.itsm": {"version": "1.3.3"}, "splunk.es": {"version": "2.0.0"}, "trendmicro.deepsec": {"version": "2.0.0"}, "vmware.vmware_rest": {"version": "2.1.5"}, "vyos.vyos": {"version": "3.0.0"}}}
+2022-12-08 10:04:13,921 p=21 u=root n=ansible | playbook: /home/student/police/use_roles.yml
+2022-12-08 10:04:13,922 p=21 u=root n=ansible |   play #1 (servera): Use the Custom Roles	TAGS: []
+2022-12-08 10:04:13,925 p=21 u=root n=ansible |     tasks:
+      Create a user	TAGS: []
+      Inform Client about delay	TAGS: []
+      mail_setup : Mail Server Task 1	TAGS: []
+      mail_setup : Mail Server Task 2	TAGS: []
+      security_setup : Install Firewall package	TAGS: []
+      security_setup : Open the Web Firewall Port	TAGS: []
+      web_server : Install web package	TAGS: []
+      web_server : Deploy the App	TAGS: []
+      web_server : Collect Info from Systems	TAGS: []
+      One more extra task	TAGS: []
+      Inform client about up service	TAGS: []
+
+2022-12-08 10:04:40,491 p=16 u=root n=ansible | {"/usr/share/ansible/collections/ansible_collections": {"amazon.aws": {"version": "3.2.0"}, "ansible.controller": {"version": "4.2.1"}, "ansible.netcommon": {"version": "3.0.0"}, "ansible.network": {"version": "1.2.0"}, "ansible.posix": {"version": "1.3.0"}, "ansible.security": {"version": "1.0.0"}, "ansible.utils": {"version": "2.6.1"}, "ansible.windows": {"version": "1.9.0"}, "ansible.yang": {"version": "1.0.0"}, "arista.eos": {"version": "5.0.0"}, "cisco.asa": {"version": "3.0.0"}, "cisco.ios": {"version": "3.0.0"}, "cisco.iosxr": {"version": "3.0.0"}, "cisco.nxos": {"version": "3.0.0"}, "cloud.common": {"version": "2.1.1"}, "frr.frr": {"version": "2.0.0"}, "ibm.qradar": {"version": "2.0.0"}, "junipernetworks.junos": {"version": "3.0.0"}, "kubernetes.core": {"version": "2.2.3"}, "openvswitch.openvswitch": {"version": "2.1.0"}, "redhat.insights": {"version": "1.0.7"}, "redhat.openshift": {"version": "2.1.0"}, "redhat.rhv": {"version": "1.6.5"}, "redhat.satellite": {"version": "3.3.0"}, "servicenow.itsm": {"version": "1.3.3"}, "splunk.es": {"version": "2.0.0"}, "trendmicro.deepsec": {"version": "2.0.0"}, "vmware.vmware_rest": {"version": "2.1.5"}, "vyos.vyos": {"version": "3.0.0"}}}
+2022-12-08 10:04:41,894 p=21 u=root n=ansible | PLAY [Use the Custom Roles] ********************************************************
+2022-12-08 10:04:48,713 p=21 u=root n=ansible | Perform task: TASK: Gathering Facts (N)o/(y)es/(c)ontinue: *************************
+2022-12-08 10:04:48,714 p=21 u=root n=ansible | TASK [Gathering Facts] *************************************************************
+2022-12-08 10:04:50,377 p=21 u=root n=ansible | ok: [servera]
+2022-12-08 10:04:55,305 p=21 u=root n=ansible | Perform task: TASK: Create a user (N)o/(y)es/(c)ontinue: ***************************
+2022-12-08 10:04:55,306 p=21 u=root n=ansible | TASK [Create a user] ***************************************************************
+2022-12-08 10:04:55,977 p=21 u=root n=ansible | ok: [servera]
+2022-12-08 10:05:00,346 p=21 u=root n=ansible |  [ERROR]: User interrupted execution
+
+2022-12-08 10:05:35,274 p=16 u=root n=ansible | {"/usr/share/ansible/collections/ansible_collections": {"amazon.aws": {"version": "3.2.0"}, "ansible.controller": {"version": "4.2.1"}, "ansible.netcommon": {"version": "3.0.0"}, "ansible.network": {"version": "1.2.0"}, "ansible.posix": {"version": "1.3.0"}, "ansible.security": {"version": "1.0.0"}, "ansible.utils": {"version": "2.6.1"}, "ansible.windows": {"version": "1.9.0"}, "ansible.yang": {"version": "1.0.0"}, "arista.eos": {"version": "5.0.0"}, "cisco.asa": {"version": "3.0.0"}, "cisco.ios": {"version": "3.0.0"}, "cisco.iosxr": {"version": "3.0.0"}, "cisco.nxos": {"version": "3.0.0"}, "cloud.common": {"version": "2.1.1"}, "frr.frr": {"version": "2.0.0"}, "ibm.qradar": {"version": "2.0.0"}, "junipernetworks.junos": {"version": "3.0.0"}, "kubernetes.core": {"version": "2.2.3"}, "openvswitch.openvswitch": {"version": "2.1.0"}, "redhat.insights": {"version": "1.0.7"}, "redhat.openshift": {"version": "2.1.0"}, "redhat.rhv": {"version": "1.6.5"}, "redhat.satellite": {"version": "3.3.0"}, "servicenow.itsm": {"version": "1.3.3"}, "splunk.es": {"version": "2.0.0"}, "trendmicro.deepsec": {"version": "2.0.0"}, "vmware.vmware_rest": {"version": "2.1.5"}, "vyos.vyos": {"version": "3.0.0"}}}
+2022-12-08 10:05:36,680 p=21 u=root n=ansible | PLAY [Use the Custom Roles] ********************************************************
+2022-12-08 10:05:56,495 p=21 u=root n=ansible | Perform task: TASK: Gathering Facts (N)o/(y)es/(c)ontinue: *************************
+2022-12-08 10:05:56,497 p=21 u=root n=ansible | TASK [Gathering Facts] *************************************************************
+2022-12-08 10:05:58,150 p=21 u=root n=ansible | ok: [servera]
+2022-12-08 10:06:01,864 p=21 u=root n=ansible | Perform task: TASK: Create a user (N)o/(y)es/(c)ontinue: ***************************
+2022-12-08 10:06:01,865 p=21 u=root n=ansible | TASK [Create a user] ***************************************************************
+2022-12-08 10:06:02,662 p=21 u=root n=ansible | changed: [servera]
+2022-12-08 10:06:20,344 p=21 u=root n=ansible | Perform task: TASK: Inform Client about delay (N)o/(y)es/(c)ontinue: ***************
+2022-12-08 10:06:20,346 p=21 u=root n=ansible | TASK [Inform Client about delay] ***************************************************
+2022-12-08 10:06:24,947 p=21 u=root n=ansible | changed: [servera]
+2022-12-08 10:06:24,963 p=21 u=root n=ansible | RUNNING HANDLER [user_created] *****************************************************
+2022-12-08 10:06:25,010 p=21 u=root n=ansible | ok: [servera] => {
+    "msg": "User Thomas created"
+}
+2022-12-08 10:06:25,011 p=21 u=root n=ansible | RUNNING HANDLER [services_down] ****************************************************
+2022-12-08 10:06:25,055 p=21 u=root n=ansible | ok: [servera] => {
+    "msg": "FB down give rest yo phone and sleep"
+}
+2022-12-08 10:07:13,750 p=21 u=root n=ansible | Perform task: TASK: mail_setup : Mail Server Task 1 (N)o/(y)es/(c)ontinue: *********
+2022-12-08 10:07:13,752 p=21 u=root n=ansible | TASK [mail_setup : Mail Server Task 1] *********************************************
+2022-12-08 10:07:16,190 p=21 u=root n=ansible | changed: [servera]
+2022-12-08 10:07:21,767 p=21 u=root n=ansible | Perform task: TASK: mail_setup : Mail Server Task 2 (N)o/(y)es/(c)ontinue: *********
+2022-12-08 10:07:21,768 p=21 u=root n=ansible | TASK [mail_setup : Mail Server Task 2] *********************************************
+2022-12-08 10:07:24,210 p=21 u=root n=ansible | changed: [servera]
+2022-12-08 10:07:38,670 p=21 u=root n=ansible | Perform task: TASK: security_setup : Install Firewall package (N)o/(y)es/(c)ontinue: ***
+2022-12-08 10:07:38,671 p=21 u=root n=ansible | TASK [security_setup : Install Firewall package] ***********************************
+2022-12-08 10:07:39,907 p=21 u=root n=ansible | ok: [servera]
+2022-12-08 10:07:49,742 p=21 u=root n=ansible | Perform task: TASK: security_setup : Open the Web Firewall Port (N)o/(y)es/(c)ontinue: ***
+2022-12-08 10:07:49,742 p=21 u=root n=ansible | TASK [security_setup : Open the Web Firewall Port] *********************************
+2022-12-08 10:07:50,557 p=21 u=root n=ansible | changed: [servera]
+2022-12-08 10:08:06,357 p=21 u=root n=ansible | Perform task: TASK: web_server : Install web package (N)o/(y)es/(c)ontinue: ********
+2022-12-08 10:08:06,358 p=21 u=root n=ansible | TASK [web_server : Install web package] ********************************************
+2022-12-08 10:08:09,538 p=21 u=root n=ansible | changed: [servera]
+2022-12-08 10:08:12,686 p=21 u=root n=ansible | Perform task: TASK: web_server : Deploy the App (N)o/(y)es/(c)ontinue: *************
+2022-12-08 10:08:12,686 p=21 u=root n=ansible | TASK [web_server : Deploy the App] *************************************************
+2022-12-08 10:08:13,820 p=21 u=root n=ansible | changed: [servera]
+2022-12-08 10:08:22,261 p=21 u=root n=ansible | Perform task: TASK: web_server : Collect Info from Systems (N)o/(y)es/(c)ontinue: ***
+2022-12-08 10:08:22,262 p=21 u=root n=ansible | TASK [web_server : Collect Info from Systems] **************************************
+2022-12-08 10:08:23,114 p=21 u=root n=ansible | changed: [servera]
+2022-12-08 10:08:31,957 p=21 u=root n=ansible | Perform task: TASK: One more extra task (N)o/(y)es/(c)ontinue: *********************
+2022-12-08 10:08:31,958 p=21 u=root n=ansible | TASK [One more extra task] *********************************************************
+2022-12-08 10:08:36,398 p=21 u=root n=ansible | changed: [servera]
+2022-12-08 10:08:36,412 p=21 u=root n=ansible | RUNNING HANDLER [mail_setup : Mail Server Task 3] **********************************
+2022-12-08 10:08:36,463 p=21 u=root n=ansible | ok: [servera] => {
+    "msg": "Task 3 Mail Server"
+}
+2022-12-08 10:08:36,464 p=21 u=root n=ansible | RUNNING HANDLER [mail_setup : Mail Server Task 4] **********************************
+2022-12-08 10:08:36,517 p=21 u=root n=ansible | ok: [servera] => {
+    "msg": "Task 4 Mail Server"
+}
+2022-12-08 10:08:36,518 p=21 u=root n=ansible | RUNNING HANDLER [security_setup : security_pack_opened] ****************************
+2022-12-08 10:08:36,572 p=21 u=root n=ansible | ok: [servera] => {
+    "msg": "http opened on firewalld"
+}
+2022-12-08 10:08:36,573 p=21 u=root n=ansible | RUNNING HANDLER [security_setup : restart_firewalld] *******************************
+2022-12-08 10:08:37,500 p=21 u=root n=ansible | ok: [servera]
+2022-12-08 10:08:37,501 p=21 u=root n=ansible | RUNNING HANDLER [web_server : Handler 3] *******************************************
+2022-12-08 10:08:37,551 p=21 u=root n=ansible | ok: [servera] => {
+    "msg": "Some Handler 3"
+}
+2022-12-08 10:08:37,552 p=21 u=root n=ansible | RUNNING HANDLER [web_server : Handler 1] *******************************************
+2022-12-08 10:08:37,602 p=21 u=root n=ansible | ok: [servera] => {
+    "msg": "Some Handler 1"
+}
+2022-12-08 10:08:37,604 p=21 u=root n=ansible | RUNNING HANDLER [web_server : Start the service] ***********************************
+2022-12-08 10:08:38,300 p=21 u=root n=ansible | changed: [servera]
+2022-12-08 10:08:38,301 p=21 u=root n=ansible | RUNNING HANDLER [web_server : info_collected] **************************************
+2022-12-08 10:08:38,356 p=21 u=root n=ansible | ok: [servera] => {
+    "msg": "facts Informqation Collcted"
+}
+2022-12-08 10:08:38,357 p=21 u=root n=ansible | RUNNING HANDLER [extra_handler] ****************************************************
+2022-12-08 10:08:38,404 p=21 u=root n=ansible | ok: [servera] => {
+    "msg": "Just extra cusion"
+}
+2022-12-08 10:08:57,101 p=21 u=root n=ansible | Perform task: TASK: Inform client about up service (N)o/(y)es/(c)ontinue: **********
+2022-12-08 10:08:57,102 p=21 u=root n=ansible | TASK [Inform client about up service] **********************************************
+2022-12-08 10:09:01,544 p=21 u=root n=ansible | changed: [servera]
+2022-12-08 10:09:01,558 p=21 u=root n=ansible | RUNNING HANDLER [services_up] ******************************************************
+2022-12-08 10:09:01,606 p=21 u=root n=ansible | ok: [servera] => {
+    "msg": "FB UP Pick phone and waste time"
+}
+2022-12-08 10:09:01,609 p=21 u=root n=ansible | PLAY RECAP *************************************************************************
+2022-12-08 10:09:01,609 p=21 u=root n=ansible | servera                    : ok=24   changed=11   unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-12-08 11:25:35,536 p=16 u=root n=ansible | {"/usr/share/ansible/collections/ansible_collections": {"amazon.aws": {"version": "3.2.0"}, "ansible.controller": {"version": "4.2.1"}, "ansible.netcommon": {"version": "3.0.0"}, "ansible.network": {"version": "1.2.0"}, "ansible.posix": {"version": "1.3.0"}, "ansible.security": {"version": "1.0.0"}, "ansible.utils": {"version": "2.6.1"}, "ansible.windows": {"version": "1.9.0"}, "ansible.yang": {"version": "1.0.0"}, "arista.eos": {"version": "5.0.0"}, "cisco.asa": {"version": "3.0.0"}, "cisco.ios": {"version": "3.0.0"}, "cisco.iosxr": {"version": "3.0.0"}, "cisco.nxos": {"version": "3.0.0"}, "cloud.common": {"version": "2.1.1"}, "frr.frr": {"version": "2.0.0"}, "ibm.qradar": {"version": "2.0.0"}, "junipernetworks.junos": {"version": "3.0.0"}, "kubernetes.core": {"version": "2.2.3"}, "openvswitch.openvswitch": {"version": "2.1.0"}, "redhat.insights": {"version": "1.0.7"}, "redhat.openshift": {"version": "2.1.0"}, "redhat.rhv": {"version": "1.6.5"}, "redhat.satellite": {"version": "3.3.0"}, "servicenow.itsm": {"version": "1.3.3"}, "splunk.es": {"version": "2.0.0"}, "trendmicro.deepsec": {"version": "2.0.0"}, "vmware.vmware_rest": {"version": "2.1.5"}, "vyos.vyos": {"version": "3.0.0"}}}
+2022-12-08 11:25:36,922 p=21 u=root n=ansible | playbook: /home/student/police/demo_roles.yml
+2022-12-08 11:25:36,922 p=21 u=root n=ansible |   play #1 (servera): Use the Custom Roles	TAGS: []
+2022-12-08 11:25:36,924 p=21 u=root n=ansible |     tasks:
+      web_server : Install web package	TAGS: []
+      web_server : Deploy the App	TAGS: []
+      web_server : Collect Info from Systems	TAGS: []
+
+2022-12-08 11:27:57,565 p=16 u=root n=ansible | {"/usr/share/ansible/collections/ansible_collections": {"amazon.aws": {"version": "3.2.0"}, "ansible.controller": {"version": "4.2.1"}, "ansible.netcommon": {"version": "3.0.0"}, "ansible.network": {"version": "1.2.0"}, "ansible.posix": {"version": "1.3.0"}, "ansible.security": {"version": "1.0.0"}, "ansible.utils": {"version": "2.6.1"}, "ansible.windows": {"version": "1.9.0"}, "ansible.yang": {"version": "1.0.0"}, "arista.eos": {"version": "5.0.0"}, "cisco.asa": {"version": "3.0.0"}, "cisco.ios": {"version": "3.0.0"}, "cisco.iosxr": {"version": "3.0.0"}, "cisco.nxos": {"version": "3.0.0"}, "cloud.common": {"version": "2.1.1"}, "frr.frr": {"version": "2.0.0"}, "ibm.qradar": {"version": "2.0.0"}, "junipernetworks.junos": {"version": "3.0.0"}, "kubernetes.core": {"version": "2.2.3"}, "openvswitch.openvswitch": {"version": "2.1.0"}, "redhat.insights": {"version": "1.0.7"}, "redhat.openshift": {"version": "2.1.0"}, "redhat.rhv": {"version": "1.6.5"}, "redhat.satellite": {"version": "3.3.0"}, "servicenow.itsm": {"version": "1.3.3"}, "splunk.es": {"version": "2.0.0"}, "trendmicro.deepsec": {"version": "2.0.0"}, "vmware.vmware_rest": {"version": "2.1.5"}, "vyos.vyos": {"version": "3.0.0"}}}
+2022-12-08 11:27:58,951 p=21 u=root n=ansible | playbook: /home/student/police/demo_roles.yml
+2022-12-08 11:27:58,952 p=21 u=root n=ansible |   play #1 (servera): Use the Custom Roles	TAGS: []
+2022-12-08 11:27:58,954 p=21 u=root n=ansible |     tasks:
+      mail_setup : Mail Server Task 1	TAGS: []
+      mail_setup : Mail Server Task 2	TAGS: []
+      security_setup : Install Firewall package	TAGS: []
+      security_setup : Open the Web Firewall Port	TAGS: []
+      web_server : Install web package	TAGS: []
+      web_server : Deploy the App	TAGS: []
+      web_server : Collect Info from Systems	TAGS: []
+
+2022-12-08 11:28:17,133 p=16 u=root n=ansible | {"/usr/share/ansible/collections/ansible_collections": {"amazon.aws": {"version": "3.2.0"}, "ansible.controller": {"version": "4.2.1"}, "ansible.netcommon": {"version": "3.0.0"}, "ansible.network": {"version": "1.2.0"}, "ansible.posix": {"version": "1.3.0"}, "ansible.security": {"version": "1.0.0"}, "ansible.utils": {"version": "2.6.1"}, "ansible.windows": {"version": "1.9.0"}, "ansible.yang": {"version": "1.0.0"}, "arista.eos": {"version": "5.0.0"}, "cisco.asa": {"version": "3.0.0"}, "cisco.ios": {"version": "3.0.0"}, "cisco.iosxr": {"version": "3.0.0"}, "cisco.nxos": {"version": "3.0.0"}, "cloud.common": {"version": "2.1.1"}, "frr.frr": {"version": "2.0.0"}, "ibm.qradar": {"version": "2.0.0"}, "junipernetworks.junos": {"version": "3.0.0"}, "kubernetes.core": {"version": "2.2.3"}, "openvswitch.openvswitch": {"version": "2.1.0"}, "redhat.insights": {"version": "1.0.7"}, "redhat.openshift": {"version": "2.1.0"}, "redhat.rhv": {"version": "1.6.5"}, "redhat.satellite": {"version": "3.3.0"}, "servicenow.itsm": {"version": "1.3.3"}, "splunk.es": {"version": "2.0.0"}, "trendmicro.deepsec": {"version": "2.0.0"}, "vmware.vmware_rest": {"version": "2.1.5"}, "vyos.vyos": {"version": "3.0.0"}}}
+2022-12-08 11:28:18,514 p=21 u=root n=ansible | playbook: /home/student/police/demo_roles.yml
+2022-12-08 11:28:18,515 p=21 u=root n=ansible |   play #1 (servera): Use the Custom Roles	TAGS: []
+2022-12-08 11:28:18,518 p=21 u=root n=ansible |     tasks:
+      mail_setup : Mail Server Task 1	TAGS: []
+      mail_setup : Mail Server Task 2	TAGS: []
+      security_setup : Install Firewall package	TAGS: []
+      security_setup : Open the Web Firewall Port	TAGS: []
+      web_server : Install web package	TAGS: []
+      web_server : Deploy the App	TAGS: []
+      web_server : Collect Info from Systems	TAGS: []
+
+2022-12-08 11:30:18,544 p=16 u=root n=ansible | {"/usr/share/ansible/collections/ansible_collections": {"amazon.aws": {"version": "3.2.0"}, "ansible.controller": {"version": "4.2.1"}, "ansible.netcommon": {"version": "3.0.0"}, "ansible.network": {"version": "1.2.0"}, "ansible.posix": {"version": "1.3.0"}, "ansible.security": {"version": "1.0.0"}, "ansible.utils": {"version": "2.6.1"}, "ansible.windows": {"version": "1.9.0"}, "ansible.yang": {"version": "1.0.0"}, "arista.eos": {"version": "5.0.0"}, "cisco.asa": {"version": "3.0.0"}, "cisco.ios": {"version": "3.0.0"}, "cisco.iosxr": {"version": "3.0.0"}, "cisco.nxos": {"version": "3.0.0"}, "cloud.common": {"version": "2.1.1"}, "frr.frr": {"version": "2.0.0"}, "ibm.qradar": {"version": "2.0.0"}, "junipernetworks.junos": {"version": "3.0.0"}, "kubernetes.core": {"version": "2.2.3"}, "openvswitch.openvswitch": {"version": "2.1.0"}, "redhat.insights": {"version": "1.0.7"}, "redhat.openshift": {"version": "2.1.0"}, "redhat.rhv": {"version": "1.6.5"}, "redhat.satellite": {"version": "3.3.0"}, "servicenow.itsm": {"version": "1.3.3"}, "splunk.es": {"version": "2.0.0"}, "trendmicro.deepsec": {"version": "2.0.0"}, "vmware.vmware_rest": {"version": "2.1.5"}, "vyos.vyos": {"version": "3.0.0"}}}
+2022-12-08 11:30:19,938 p=21 u=root n=ansible | playbook: /home/student/police/demo_roles.yml
+2022-12-08 11:30:19,938 p=21 u=root n=ansible |   play #1 (servera): Use the Custom Roles	TAGS: []
+2022-12-08 11:30:19,941 p=21 u=root n=ansible |     tasks:
+      mail_setup : Mail Server Task 1	TAGS: []
+      mail_setup : Mail Server Task 2	TAGS: []
+      security_setup : Install Firewall package	TAGS: []
+      security_setup : Open the Web Firewall Port	TAGS: []
+      web_server : Install web package	TAGS: []
+      web_server : Deploy the App	TAGS: []
+      web_server : Collect Info from Systems	TAGS: []
+      One more extra task	TAGS: []
+
+2022-12-08 11:30:46,642 p=16 u=root n=ansible | {"/usr/share/ansible/collections/ansible_collections": {"amazon.aws": {"version": "3.2.0"}, "ansible.controller": {"version": "4.2.1"}, "ansible.netcommon": {"version": "3.0.0"}, "ansible.network": {"version": "1.2.0"}, "ansible.posix": {"version": "1.3.0"}, "ansible.security": {"version": "1.0.0"}, "ansible.utils": {"version": "2.6.1"}, "ansible.windows": {"version": "1.9.0"}, "ansible.yang": {"version": "1.0.0"}, "arista.eos": {"version": "5.0.0"}, "cisco.asa": {"version": "3.0.0"}, "cisco.ios": {"version": "3.0.0"}, "cisco.iosxr": {"version": "3.0.0"}, "cisco.nxos": {"version": "3.0.0"}, "cloud.common": {"version": "2.1.1"}, "frr.frr": {"version": "2.0.0"}, "ibm.qradar": {"version": "2.0.0"}, "junipernetworks.junos": {"version": "3.0.0"}, "kubernetes.core": {"version": "2.2.3"}, "openvswitch.openvswitch": {"version": "2.1.0"}, "redhat.insights": {"version": "1.0.7"}, "redhat.openshift": {"version": "2.1.0"}, "redhat.rhv": {"version": "1.6.5"}, "redhat.satellite": {"version": "3.3.0"}, "servicenow.itsm": {"version": "1.3.3"}, "splunk.es": {"version": "2.0.0"}, "trendmicro.deepsec": {"version": "2.0.0"}, "vmware.vmware_rest": {"version": "2.1.5"}, "vyos.vyos": {"version": "3.0.0"}}}
+2022-12-08 11:30:48,018 p=21 u=root n=ansible | playbook: /home/student/police/demo_roles.yml
+2022-12-08 11:30:48,019 p=21 u=root n=ansible |   play #1 (servera): Use the Custom Roles	TAGS: []
+2022-12-08 11:30:48,022 p=21 u=root n=ansible |     tasks:
+      mail_setup : Mail Server Task 1	TAGS: []
+      mail_setup : Mail Server Task 2	TAGS: []
+      security_setup : Install Firewall package	TAGS: []
+      security_setup : Open the Web Firewall Port	TAGS: []
+      web_server : Install web package	TAGS: []
+      web_server : Deploy the App	TAGS: []
+      web_server : Collect Info from Systems	TAGS: []
+      One more extra task	TAGS: []
+
+2022-12-08 11:33:11,286 p=16 u=root n=ansible | {"/usr/share/ansible/collections/ansible_collections": {"amazon.aws": {"version": "3.2.0"}, "ansible.controller": {"version": "4.2.1"}, "ansible.netcommon": {"version": "3.0.0"}, "ansible.network": {"version": "1.2.0"}, "ansible.posix": {"version": "1.3.0"}, "ansible.security": {"version": "1.0.0"}, "ansible.utils": {"version": "2.6.1"}, "ansible.windows": {"version": "1.9.0"}, "ansible.yang": {"version": "1.0.0"}, "arista.eos": {"version": "5.0.0"}, "cisco.asa": {"version": "3.0.0"}, "cisco.ios": {"version": "3.0.0"}, "cisco.iosxr": {"version": "3.0.0"}, "cisco.nxos": {"version": "3.0.0"}, "cloud.common": {"version": "2.1.1"}, "frr.frr": {"version": "2.0.0"}, "ibm.qradar": {"version": "2.0.0"}, "junipernetworks.junos": {"version": "3.0.0"}, "kubernetes.core": {"version": "2.2.3"}, "openvswitch.openvswitch": {"version": "2.1.0"}, "redhat.insights": {"version": "1.0.7"}, "redhat.openshift": {"version": "2.1.0"}, "redhat.rhv": {"version": "1.6.5"}, "redhat.satellite": {"version": "3.3.0"}, "servicenow.itsm": {"version": "1.3.3"}, "splunk.es": {"version": "2.0.0"}, "trendmicro.deepsec": {"version": "2.0.0"}, "vmware.vmware_rest": {"version": "2.1.5"}, "vyos.vyos": {"version": "3.0.0"}}}
+2022-12-08 11:33:12,665 p=21 u=root n=ansible | playbook: /home/student/police/demo_roles.yml
+2022-12-08 11:33:12,666 p=21 u=root n=ansible |   play #1 (servera): Use the Custom Roles	TAGS: []
+2022-12-08 11:33:12,669 p=21 u=root n=ansible |     tasks:
+      Create a user	TAGS: []
+      Inform Client about delay	TAGS: []
+      mail_setup : Mail Server Task 1	TAGS: []
+      mail_setup : Mail Server Task 2	TAGS: []
+      security_setup : Install Firewall package	TAGS: []
+      security_setup : Open the Web Firewall Port	TAGS: []
+      web_server : Install web package	TAGS: []
+      web_server : Deploy the App	TAGS: []
+      web_server : Collect Info from Systems	TAGS: []
+      One more extra task	TAGS: []
+      Inform client about up service	TAGS: []
+
+2022-12-08 11:34:24,220 p=16 u=root n=ansible | {"/usr/share/ansible/collections/ansible_collections": {"amazon.aws": {"version": "3.2.0"}, "ansible.controller": {"version": "4.2.1"}, "ansible.netcommon": {"version": "3.0.0"}, "ansible.network": {"version": "1.2.0"}, "ansible.posix": {"version": "1.3.0"}, "ansible.security": {"version": "1.0.0"}, "ansible.utils": {"version": "2.6.1"}, "ansible.windows": {"version": "1.9.0"}, "ansible.yang": {"version": "1.0.0"}, "arista.eos": {"version": "5.0.0"}, "cisco.asa": {"version": "3.0.0"}, "cisco.ios": {"version": "3.0.0"}, "cisco.iosxr": {"version": "3.0.0"}, "cisco.nxos": {"version": "3.0.0"}, "cloud.common": {"version": "2.1.1"}, "frr.frr": {"version": "2.0.0"}, "ibm.qradar": {"version": "2.0.0"}, "junipernetworks.junos": {"version": "3.0.0"}, "kubernetes.core": {"version": "2.2.3"}, "openvswitch.openvswitch": {"version": "2.1.0"}, "redhat.insights": {"version": "1.0.7"}, "redhat.openshift": {"version": "2.1.0"}, "redhat.rhv": {"version": "1.6.5"}, "redhat.satellite": {"version": "3.3.0"}, "servicenow.itsm": {"version": "1.3.3"}, "splunk.es": {"version": "2.0.0"}, "trendmicro.deepsec": {"version": "2.0.0"}, "vmware.vmware_rest": {"version": "2.1.5"}, "vyos.vyos": {"version": "3.0.0"}}}
+2022-12-08 11:34:25,625 p=21 u=root n=ansible | PLAY [Use the Custom Roles] ****************************************************
+2022-12-08 11:34:29,648 p=21 u=root n=ansible | Perform task: TASK: Gathering Facts (N)o/(y)es/(c)ontinue: *********************
+2022-12-08 11:34:29,649 p=21 u=root n=ansible | TASK [Gathering Facts] *********************************************************
+2022-12-08 11:34:31,350 p=21 u=root n=ansible | ok: [servera]
+2022-12-08 11:34:37,664 p=21 u=root n=ansible | Perform task: TASK: Create a user (N)o/(y)es/(c)ontinue: ***********************
+2022-12-08 11:34:37,665 p=21 u=root n=ansible | TASK [Create a user] ***********************************************************
+2022-12-08 11:34:38,456 p=21 u=root n=ansible | changed: [servera]
+2022-12-08 11:34:49,136 p=21 u=root n=ansible | Perform task: TASK: Inform Client about delay (N)o/(y)es/(c)ontinue: ***********
+2022-12-08 11:34:49,137 p=21 u=root n=ansible | TASK [Inform Client about delay] ***********************************************
+2022-12-08 11:34:53,731 p=21 u=root n=ansible | changed: [servera]
+2022-12-08 11:34:53,747 p=21 u=root n=ansible | RUNNING HANDLER [user_created] *************************************************
+2022-12-08 11:34:53,794 p=21 u=root n=ansible | ok: [servera] => {
+    "msg": "User Thomas created"
+}
+2022-12-08 11:34:53,794 p=21 u=root n=ansible | RUNNING HANDLER [services_down] ************************************************
+2022-12-08 11:34:53,840 p=21 u=root n=ansible | ok: [servera] => {
+    "msg": "FB down give rest yo phone and sleep"
+}
+2022-12-08 11:35:04,792 p=21 u=root n=ansible | Perform task: TASK: mail_setup : Mail Server Task 1 (N)o/(y)es/(c)ontinue: *****
+2022-12-08 11:35:04,793 p=21 u=root n=ansible | TASK [mail_setup : Mail Server Task 1] *****************************************
+2022-12-08 11:35:07,239 p=21 u=root n=ansible | changed: [servera]
+2022-12-08 11:35:13,904 p=21 u=root n=ansible | Perform task: TASK: mail_setup : Mail Server Task 2 (N)o/(y)es/(c)ontinue: *****
+2022-12-08 11:35:13,905 p=21 u=root n=ansible | TASK [mail_setup : Mail Server Task 2] *****************************************
+2022-12-08 11:35:16,344 p=21 u=root n=ansible | changed: [servera]
+2022-12-08 11:35:23,880 p=21 u=root n=ansible | Perform task: TASK: security_setup : Install Firewall package (N)o/(y)es/(c)ontinue: ***
+2022-12-08 11:35:23,881 p=21 u=root n=ansible | TASK [security_setup : Install Firewall package] *******************************
+2022-12-08 11:35:25,113 p=21 u=root n=ansible | ok: [servera]
+2022-12-08 11:35:32,671 p=21 u=root n=ansible | Perform task: TASK: security_setup : Open the Web Firewall Port (N)o/(y)es/(c)ontinue: ***
+2022-12-08 11:35:32,672 p=21 u=root n=ansible | TASK [security_setup : Open the Web Firewall Port] *****************************
+2022-12-08 11:35:33,459 p=21 u=root n=ansible | changed: [servera]
+2022-12-08 11:35:42,119 p=21 u=root n=ansible | Perform task: TASK: web_server : Install web package (N)o/(y)es/(c)ontinue: ****
+2022-12-08 11:35:42,120 p=21 u=root n=ansible | TASK [web_server : Install web package] ****************************************
+2022-12-08 11:35:45,356 p=21 u=root n=ansible | changed: [servera]
+2022-12-08 11:35:51,023 p=21 u=root n=ansible | Perform task: TASK: web_server : Deploy the App (N)o/(y)es/(c)ontinue: *********
+2022-12-08 11:35:51,024 p=21 u=root n=ansible | TASK [web_server : Deploy the App] *********************************************
+2022-12-08 11:35:52,150 p=21 u=root n=ansible | changed: [servera]
+2022-12-08 11:35:59,895 p=21 u=root n=ansible | Perform task: TASK: web_server : Collect Info from Systems (N)o/(y)es/(c)ontinue: ***
+2022-12-08 11:35:59,896 p=21 u=root n=ansible | TASK [web_server : Collect Info from Systems] **********************************
+2022-12-08 11:36:00,743 p=21 u=root n=ansible | changed: [servera]
+2022-12-08 11:36:06,959 p=21 u=root n=ansible | Perform task: TASK: One more extra task (N)o/(y)es/(c)ontinue: *****************
+2022-12-08 11:36:06,960 p=21 u=root n=ansible | TASK [One more extra task] *****************************************************
+2022-12-08 11:36:11,399 p=21 u=root n=ansible | changed: [servera]
+2022-12-08 11:36:11,414 p=21 u=root n=ansible | RUNNING HANDLER [mail_setup : Mail Server Task 3] ******************************
+2022-12-08 11:36:11,463 p=21 u=root n=ansible | ok: [servera] => {
+    "msg": "Task 3 Mail Server"
+}
+2022-12-08 11:36:11,465 p=21 u=root n=ansible | RUNNING HANDLER [mail_setup : Mail Server Task 4] ******************************
+2022-12-08 11:36:11,518 p=21 u=root n=ansible | ok: [servera] => {
+    "msg": "Task 4 Mail Server"
+}
+2022-12-08 11:36:11,519 p=21 u=root n=ansible | RUNNING HANDLER [security_setup : security_pack_opened] ************************
+2022-12-08 11:36:11,568 p=21 u=root n=ansible | ok: [servera] => {
+    "msg": "http opened on firewalld"
+}
+2022-12-08 11:36:11,569 p=21 u=root n=ansible | RUNNING HANDLER [security_setup : restart_firewalld] ***************************
+2022-12-08 11:36:12,504 p=21 u=root n=ansible | ok: [servera]
+2022-12-08 11:36:12,505 p=21 u=root n=ansible | RUNNING HANDLER [web_server : Handler 3] ***************************************
+2022-12-08 11:36:12,553 p=21 u=root n=ansible | ok: [servera] => {
+    "msg": "Some Handler 3"
+}
+2022-12-08 11:36:12,554 p=21 u=root n=ansible | RUNNING HANDLER [web_server : Handler 1] ***************************************
+2022-12-08 11:36:12,604 p=21 u=root n=ansible | ok: [servera] => {
+    "msg": "Some Handler 1"
+}
+2022-12-08 11:36:12,606 p=21 u=root n=ansible | RUNNING HANDLER [web_server : Start the service] *******************************
+2022-12-08 11:36:13,309 p=21 u=root n=ansible | changed: [servera]
+2022-12-08 11:36:13,310 p=21 u=root n=ansible | RUNNING HANDLER [web_server : info_collected] **********************************
+2022-12-08 11:36:13,361 p=21 u=root n=ansible | ok: [servera] => {
+    "msg": "facts Informqation Collcted"
+}
+2022-12-08 11:36:13,362 p=21 u=root n=ansible | RUNNING HANDLER [extra_handler] ************************************************
+2022-12-08 11:36:13,411 p=21 u=root n=ansible | ok: [servera] => {
+    "msg": "Just extra cusion"
+}
+2022-12-08 11:36:33,966 p=21 u=root n=ansible | Perform task: TASK: Inform client about up service (N)o/(y)es/(c)ontinue: ******
+2022-12-08 11:36:33,967 p=21 u=root n=ansible | TASK [Inform client about up service] ******************************************
+2022-12-08 11:36:38,414 p=21 u=root n=ansible | changed: [servera]
+2022-12-08 11:36:38,429 p=21 u=root n=ansible | RUNNING HANDLER [services_up] **************************************************
+2022-12-08 11:36:38,477 p=21 u=root n=ansible | ok: [servera] => {
+    "msg": "FB UP Pick phone and waste time"
+}
+2022-12-08 11:36:38,480 p=21 u=root n=ansible | PLAY RECAP *********************************************************************
+2022-12-08 11:36:38,480 p=21 u=root n=ansible | servera                    : ok=24   changed=11   unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-12-08 11:39:50,182 p=16 u=root n=ansible | {"/usr/share/ansible/collections/ansible_collections": {"amazon.aws": {"version": "3.2.0"}, "ansible.controller": {"version": "4.2.1"}, "ansible.netcommon": {"version": "3.0.0"}, "ansible.network": {"version": "1.2.0"}, "ansible.posix": {"version": "1.3.0"}, "ansible.security": {"version": "1.0.0"}, "ansible.utils": {"version": "2.6.1"}, "ansible.windows": {"version": "1.9.0"}, "ansible.yang": {"version": "1.0.0"}, "arista.eos": {"version": "5.0.0"}, "cisco.asa": {"version": "3.0.0"}, "cisco.ios": {"version": "3.0.0"}, "cisco.iosxr": {"version": "3.0.0"}, "cisco.nxos": {"version": "3.0.0"}, "cloud.common": {"version": "2.1.1"}, "frr.frr": {"version": "2.0.0"}, "ibm.qradar": {"version": "2.0.0"}, "junipernetworks.junos": {"version": "3.0.0"}, "kubernetes.core": {"version": "2.2.3"}, "openvswitch.openvswitch": {"version": "2.1.0"}, "redhat.insights": {"version": "1.0.7"}, "redhat.openshift": {"version": "2.1.0"}, "redhat.rhv": {"version": "1.6.5"}, "redhat.satellite": {"version": "3.3.0"}, "servicenow.itsm": {"version": "1.3.3"}, "splunk.es": {"version": "2.0.0"}, "trendmicro.deepsec": {"version": "2.0.0"}, "vmware.vmware_rest": {"version": "2.1.5"}, "vyos.vyos": {"version": "3.0.0"}}}
+2022-12-08 11:39:51,276 p=21 u=root n=ansible | {
+    "import_role": {
+        "doc": {
+            "attributes": {
+                "action": {
+                    "description": "Indicates this has a corresponding action plugin so some parts of the options can be executed on the controller",
+                    "details": "While this action executes locally on the controller it is not governed by an action plugin",
+                    "support": "none"
+                },
+                "async": {
+                    "description": "Supports being used with the C(async) keyword",
+                    "support": "none"
+                },
+                "become": {
+                    "description": "Is usable alongside become keywords",
+                    "support": "none"
+                },
+                "bypass_host_loop": {
+                    "description": [
+                        "Forces a 'global' task that does not execute per host, this bypasses per host templating and serial, throttle and other loop considerations",
+                        "Conditionals will work as if C(run_once) is being used, variables used will be from the first available host",
+                        "This action will not work normally outside of lockstep strategies"
+                    ],
+                    "details": "While the import can be host specific and runs per host it is not dealing with all available host variables, use an include instead for those cases",
+                    "support": "partial"
+                },
+                "bypass_task_loop": {
+                    "description": "These tasks ignore the C(loop) and C(with_) keywords",
+                    "details": "The task itself is not looped, but the loop is applied to each imported task",
+                    "support": "partial"
+                },
+                "check_mode": {
+                    "description": "Can run in check_mode and return changed status prediction without modifying target",
+                    "support": "full"
+                },
+                "connection": {
+                    "description": "Uses the target's configured connection information to execute code on it",
+                    "support": "none"
+                },
+                "core": {
+                    "description": "This is a 'core engine' feature and is not implemented like most task actions, so it is not overridable in any way via the plugin system.",
+                    "support": "full"
+                },
+                "delegation": {
+                    "description": "Can be used in conjunction with delegate_to and related keywords",
+                    "details": "Since there are no connection nor facts, there is no sense in delegating imports",
+                    "support": "none"
+                },
+                "diff_mode": {
+                    "description": "Will return details on what has changed (or possibly needs changing in check_mode), when in diff mode",
+                    "support": "none"
+                },
+                "ignore_conditional": {
+                    "description": "The action is not subject to conditional execution so it will ignore the C(when:) keyword",
+                    "details": "While the action itself will ignore the conditional, it will be inherited by the imported tasks themselves",
+                    "support": "none"
+                },
+                "platform": {
+                    "description": "Target OS/families that can be operated against",
+                    "platforms": "all",
+                    "support": "N/A"
+                },
+                "tags": {
+                    "description": "Allows for the 'tags' keyword to control the selection of this action for execution",
+                    "details": "Tags are not interpreted for this action, they are applied to the imported tasks",
+                    "support": "full"
+                },
+                "until": {
+                    "description": "Denotes if this action objeys until/retry/poll keywords",
+                    "support": "full"
+                }
+            },
+            "author": "Ansible Core Team (@ansible)",
+            "collection": "ansible.builtin",
+            "description": [
+                "Much like the C(roles:) keyword, this task loads a role, but it allows you to control when the role tasks run in between other tasks of the play.",
+                "Most keywords, loops and conditionals will only be applied to the imported tasks, not to this statement itself. If you want the opposite behavior, use M(ansible.builtin.include_role) instead.",
+                "Does not work in handlers."
+            ],
+            "filename": "/usr/lib/python3.9/site-packages/ansible/modules/import_role.py",
+            "has_action": false,
+            "module": "import_role",
+            "notes": [
+                "Handlers are made available to the whole play.",
+                "Since Ansible 2.7 variables defined in C(vars) and C(defaults) for the role are exposed to the play at playbook parsing time. Due to this, these variables will be accessible to roles and tasks executed before the location of the M(ansible.builtin.import_role) task.",
+                "Unlike M(ansible.builtin.include_role) variable exposure is not configurable, and will always be exposed."
+            ],
+            "options": {
+                "allow_duplicates": {
+                    "default": true,
+                    "description": [
+                        "Overrides the role's metadata setting to allow using a role more than once with the same parameters."
+                    ],
+                    "type": "bool"
+                },
+                "defaults_from": {
+                    "default": "main",
+                    "description": [
+                        "File to load from a role's C(defaults/) directory."
+                    ],
+                    "type": "str"
+                },
+                "handlers_from": {
+                    "default": "main",
+                    "description": [
+                        "File to load from a role's C(handlers/) directory."
+                    ],
+                    "type": "str",
+                    "version_added": "2.8",
+                    "version_added_collection": "ansible.builtin"
+                },
+                "name": {
+                    "description": [
+                        "The name of the role to be executed."
+                    ],
+                    "required": true,
+                    "type": "str"
+                },
+                "rolespec_validate": {
+                    "default": true,
+                    "description": [
+                        "Perform role argument spec validation if an argument spec is defined."
+                    ],
+                    "type": "bool",
+                    "version_added": "2.11",
+                    "version_added_collection": "ansible.builtin"
+                },
+                "tasks_from": {
+                    "default": "main",
+                    "description": [
+                        "File to load from a role's C(tasks/) directory."
+                    ],
+                    "type": "str"
+                },
+                "vars_from": {
+                    "default": "main",
+                    "description": [
+                        "File to load from a role's C(vars/) directory."
+                    ],
+                    "type": "str"
+                }
+            },
+            "seealso": [
+                {
+                    "module": "ansible.builtin.import_playbook"
+                },
+                {
+                    "module": "ansible.builtin.import_tasks"
+                },
+                {
+                    "module": "ansible.builtin.include_role"
+                },
+                {
+                    "module": "ansible.builtin.include_tasks"
+                },
+                {
+                    "description": "More information related to including and importing playbooks, roles and tasks.",
+                    "ref": "playbooks_reuse_includes"
+                }
+            ],
+            "short_description": "Import a role into a play",
+            "version_added": "2.4",
+            "version_added_collection": "ansible.builtin"
+        },
+        "examples": "\n- hosts: all\n  tasks:\n    - ansible.builtin.import_role:\n        name: myrole\n\n    - name: Run tasks/other.yaml instead of 'main'\n      ansible.builtin.import_role:\n        name: myrole\n        tasks_from: other\n\n    - name: Pass variables to role\n      ansible.builtin.import_role:\n        name: myrole\n      vars:\n        rolevar1: value from task\n\n    - name: Apply condition to each task in role\n      ansible.builtin.import_role:\n        name: myrole\n      when: not idontwanttorun\n",
+        "metadata": null,
+        "return": null
+    }
+}
+2022-12-08 11:40:27,713 p=16 u=root n=ansible | {"/usr/share/ansible/collections/ansible_collections": {"amazon.aws": {"version": "3.2.0"}, "ansible.controller": {"version": "4.2.1"}, "ansible.netcommon": {"version": "3.0.0"}, "ansible.network": {"version": "1.2.0"}, "ansible.posix": {"version": "1.3.0"}, "ansible.security": {"version": "1.0.0"}, "ansible.utils": {"version": "2.6.1"}, "ansible.windows": {"version": "1.9.0"}, "ansible.yang": {"version": "1.0.0"}, "arista.eos": {"version": "5.0.0"}, "cisco.asa": {"version": "3.0.0"}, "cisco.ios": {"version": "3.0.0"}, "cisco.iosxr": {"version": "3.0.0"}, "cisco.nxos": {"version": "3.0.0"}, "cloud.common": {"version": "2.1.1"}, "frr.frr": {"version": "2.0.0"}, "ibm.qradar": {"version": "2.0.0"}, "junipernetworks.junos": {"version": "3.0.0"}, "kubernetes.core": {"version": "2.2.3"}, "openvswitch.openvswitch": {"version": "2.1.0"}, "redhat.insights": {"version": "1.0.7"}, "redhat.openshift": {"version": "2.1.0"}, "redhat.rhv": {"version": "1.6.5"}, "redhat.satellite": {"version": "3.3.0"}, "servicenow.itsm": {"version": "1.3.3"}, "splunk.es": {"version": "2.0.0"}, "trendmicro.deepsec": {"version": "2.0.0"}, "vmware.vmware_rest": {"version": "2.1.5"}, "vyos.vyos": {"version": "3.0.0"}}}
+2022-12-08 11:40:28,798 p=21 u=root n=ansible | {
+    "import_role": {
+        "doc": {
+            "attributes": {
+                "action": {
+                    "description": "Indicates this has a corresponding action plugin so some parts of the options can be executed on the controller",
+                    "details": "While this action executes locally on the controller it is not governed by an action plugin",
+                    "support": "none"
+                },
+                "async": {
+                    "description": "Supports being used with the C(async) keyword",
+                    "support": "none"
+                },
+                "become": {
+                    "description": "Is usable alongside become keywords",
+                    "support": "none"
+                },
+                "bypass_host_loop": {
+                    "description": [
+                        "Forces a 'global' task that does not execute per host, this bypasses per host templating and serial, throttle and other loop considerations",
+                        "Conditionals will work as if C(run_once) is being used, variables used will be from the first available host",
+                        "This action will not work normally outside of lockstep strategies"
+                    ],
+                    "details": "While the import can be host specific and runs per host it is not dealing with all available host variables, use an include instead for those cases",
+                    "support": "partial"
+                },
+                "bypass_task_loop": {
+                    "description": "These tasks ignore the C(loop) and C(with_) keywords",
+                    "details": "The task itself is not looped, but the loop is applied to each imported task",
+                    "support": "partial"
+                },
+                "check_mode": {
+                    "description": "Can run in check_mode and return changed status prediction without modifying target",
+                    "support": "full"
+                },
+                "connection": {
+                    "description": "Uses the target's configured connection information to execute code on it",
+                    "support": "none"
+                },
+                "core": {
+                    "description": "This is a 'core engine' feature and is not implemented like most task actions, so it is not overridable in any way via the plugin system.",
+                    "support": "full"
+                },
+                "delegation": {
+                    "description": "Can be used in conjunction with delegate_to and related keywords",
+                    "details": "Since there are no connection nor facts, there is no sense in delegating imports",
+                    "support": "none"
+                },
+                "diff_mode": {
+                    "description": "Will return details on what has changed (or possibly needs changing in check_mode), when in diff mode",
+                    "support": "none"
+                },
+                "ignore_conditional": {
+                    "description": "The action is not subject to conditional execution so it will ignore the C(when:) keyword",
+                    "details": "While the action itself will ignore the conditional, it will be inherited by the imported tasks themselves",
+                    "support": "none"
+                },
+                "platform": {
+                    "description": "Target OS/families that can be operated against",
+                    "platforms": "all",
+                    "support": "N/A"
+                },
+                "tags": {
+                    "description": "Allows for the 'tags' keyword to control the selection of this action for execution",
+                    "details": "Tags are not interpreted for this action, they are applied to the imported tasks",
+                    "support": "full"
+                },
+                "until": {
+                    "description": "Denotes if this action objeys until/retry/poll keywords",
+                    "support": "full"
+                }
+            },
+            "author": "Ansible Core Team (@ansible)",
+            "collection": "ansible.builtin",
+            "description": [
+                "Much like the C(roles:) keyword, this task loads a role, but it allows you to control when the role tasks run in between other tasks of the play.",
+                "Most keywords, loops and conditionals will only be applied to the imported tasks, not to this statement itself. If you want the opposite behavior, use M(ansible.builtin.include_role) instead.",
+                "Does not work in handlers."
+            ],
+            "filename": "/usr/lib/python3.9/site-packages/ansible/modules/import_role.py",
+            "has_action": false,
+            "module": "import_role",
+            "notes": [
+                "Handlers are made available to the whole play.",
+                "Since Ansible 2.7 variables defined in C(vars) and C(defaults) for the role are exposed to the play at playbook parsing time. Due to this, these variables will be accessible to roles and tasks executed before the location of the M(ansible.builtin.import_role) task.",
+                "Unlike M(ansible.builtin.include_role) variable exposure is not configurable, and will always be exposed."
+            ],
+            "options": {
+                "allow_duplicates": {
+                    "default": true,
+                    "description": [
+                        "Overrides the role's metadata setting to allow using a role more than once with the same parameters."
+                    ],
+                    "type": "bool"
+                },
+                "defaults_from": {
+                    "default": "main",
+                    "description": [
+                        "File to load from a role's C(defaults/) directory."
+                    ],
+                    "type": "str"
+                },
+                "handlers_from": {
+                    "default": "main",
+                    "description": [
+                        "File to load from a role's C(handlers/) directory."
+                    ],
+                    "type": "str",
+                    "version_added": "2.8",
+                    "version_added_collection": "ansible.builtin"
+                },
+                "name": {
+                    "description": [
+                        "The name of the role to be executed."
+                    ],
+                    "required": true,
+                    "type": "str"
+                },
+                "rolespec_validate": {
+                    "default": true,
+                    "description": [
+                        "Perform role argument spec validation if an argument spec is defined."
+                    ],
+                    "type": "bool",
+                    "version_added": "2.11",
+                    "version_added_collection": "ansible.builtin"
+                },
+                "tasks_from": {
+                    "default": "main",
+                    "description": [
+                        "File to load from a role's C(tasks/) directory."
+                    ],
+                    "type": "str"
+                },
+                "vars_from": {
+                    "default": "main",
+                    "description": [
+                        "File to load from a role's C(vars/) directory."
+                    ],
+                    "type": "str"
+                }
+            },
+            "seealso": [
+                {
+                    "module": "ansible.builtin.import_playbook"
+                },
+                {
+                    "module": "ansible.builtin.import_tasks"
+                },
+                {
+                    "module": "ansible.builtin.include_role"
+                },
+                {
+                    "module": "ansible.builtin.include_tasks"
+                },
+                {
+                    "description": "More information related to including and importing playbooks, roles and tasks.",
+                    "ref": "playbooks_reuse_includes"
+                }
+            ],
+            "short_description": "Import a role into a play",
+            "version_added": "2.4",
+            "version_added_collection": "ansible.builtin"
+        },
+        "examples": "\n- hosts: all\n  tasks:\n    - ansible.builtin.import_role:\n        name: myrole\n\n    - name: Run tasks/other.yaml instead of 'main'\n      ansible.builtin.import_role:\n        name: myrole\n        tasks_from: other\n\n    - name: Pass variables to role\n      ansible.builtin.import_role:\n        name: myrole\n      vars:\n        rolevar1: value from task\n\n    - name: Apply condition to each task in role\n      ansible.builtin.import_role:\n        name: myrole\n      when: not idontwanttorun\n",
+        "metadata": null,
+        "return": null
+    }
+}
+2022-12-08 11:40:34,948 p=16 u=root n=ansible | {"/usr/share/ansible/collections/ansible_collections": {"amazon.aws": {"version": "3.2.0"}, "ansible.controller": {"version": "4.2.1"}, "ansible.netcommon": {"version": "3.0.0"}, "ansible.network": {"version": "1.2.0"}, "ansible.posix": {"version": "1.3.0"}, "ansible.security": {"version": "1.0.0"}, "ansible.utils": {"version": "2.6.1"}, "ansible.windows": {"version": "1.9.0"}, "ansible.yang": {"version": "1.0.0"}, "arista.eos": {"version": "5.0.0"}, "cisco.asa": {"version": "3.0.0"}, "cisco.ios": {"version": "3.0.0"}, "cisco.iosxr": {"version": "3.0.0"}, "cisco.nxos": {"version": "3.0.0"}, "cloud.common": {"version": "2.1.1"}, "frr.frr": {"version": "2.0.0"}, "ibm.qradar": {"version": "2.0.0"}, "junipernetworks.junos": {"version": "3.0.0"}, "kubernetes.core": {"version": "2.2.3"}, "openvswitch.openvswitch": {"version": "2.1.0"}, "redhat.insights": {"version": "1.0.7"}, "redhat.openshift": {"version": "2.1.0"}, "redhat.rhv": {"version": "1.6.5"}, "redhat.satellite": {"version": "3.3.0"}, "servicenow.itsm": {"version": "1.3.3"}, "splunk.es": {"version": "2.0.0"}, "trendmicro.deepsec": {"version": "2.0.0"}, "vmware.vmware_rest": {"version": "2.1.5"}, "vyos.vyos": {"version": "3.0.0"}}}
+2022-12-08 11:40:36,369 p=21 u=root n=ansible | PLAY [Use the Custom Roles] ****************************************************
+2022-12-08 11:40:36,389 p=21 u=root n=ansible | TASK [Gathering Facts] *********************************************************
+2022-12-08 11:40:38,060 p=21 u=root n=ansible | ok: [servera]
+2022-12-08 11:40:38,087 p=21 u=root n=ansible | TASK [One more extra task] *****************************************************
+2022-12-08 11:40:42,698 p=21 u=root n=ansible | changed: [servera]
+2022-12-08 11:40:42,712 p=21 u=root n=ansible | TASK [mail_setup : Mail Server Task 1] *****************************************
+2022-12-08 11:40:42,739 p=21 u=root n=ansible | skipping: [servera]
+2022-12-08 11:40:42,753 p=21 u=root n=ansible | TASK [mail_setup : Mail Server Task 2] *****************************************
+2022-12-08 11:40:42,777 p=21 u=root n=ansible | skipping: [servera]
+2022-12-08 11:40:42,806 p=21 u=root n=ansible | TASK [security_setup : Install Firewall package] *******************************
+2022-12-08 11:40:42,829 p=21 u=root n=ansible | skipping: [servera]
+2022-12-08 11:40:42,843 p=21 u=root n=ansible | TASK [security_setup : Open the Web Firewall Port] *****************************
+2022-12-08 11:40:42,866 p=21 u=root n=ansible | skipping: [servera]
+2022-12-08 11:40:42,893 p=21 u=root n=ansible | TASK [web_server : Install web package] ****************************************
+2022-12-08 11:40:42,915 p=21 u=root n=ansible | skipping: [servera]
+2022-12-08 11:40:42,931 p=21 u=root n=ansible | TASK [web_server : Deploy the App] *********************************************
+2022-12-08 11:40:42,952 p=21 u=root n=ansible | skipping: [servera]
+2022-12-08 11:40:42,968 p=21 u=root n=ansible | TASK [web_server : Collect Info from Systems] **********************************
+2022-12-08 11:40:42,992 p=21 u=root n=ansible | skipping: [servera]
+2022-12-08 11:40:43,019 p=21 u=root n=ansible | RUNNING HANDLER [extra_handler] ************************************************
+2022-12-08 11:40:43,066 p=21 u=root n=ansible | ok: [servera] => {
+    "msg": "Just extra cusion"
+}
+2022-12-08 11:40:43,081 p=21 u=root n=ansible | PLAY RECAP *********************************************************************
+2022-12-08 11:40:43,082 p=21 u=root n=ansible | servera                    : ok=3    changed=1    unreachable=0    failed=0    skipped=7    rescued=0    ignored=0   
+2022-12-08 11:40:53,848 p=16 u=root n=ansible | {"/usr/share/ansible/collections/ansible_collections": {"amazon.aws": {"version": "3.2.0"}, "ansible.controller": {"version": "4.2.1"}, "ansible.netcommon": {"version": "3.0.0"}, "ansible.network": {"version": "1.2.0"}, "ansible.posix": {"version": "1.3.0"}, "ansible.security": {"version": "1.0.0"}, "ansible.utils": {"version": "2.6.1"}, "ansible.windows": {"version": "1.9.0"}, "ansible.yang": {"version": "1.0.0"}, "arista.eos": {"version": "5.0.0"}, "cisco.asa": {"version": "3.0.0"}, "cisco.ios": {"version": "3.0.0"}, "cisco.iosxr": {"version": "3.0.0"}, "cisco.nxos": {"version": "3.0.0"}, "cloud.common": {"version": "2.1.1"}, "frr.frr": {"version": "2.0.0"}, "ibm.qradar": {"version": "2.0.0"}, "junipernetworks.junos": {"version": "3.0.0"}, "kubernetes.core": {"version": "2.2.3"}, "openvswitch.openvswitch": {"version": "2.1.0"}, "redhat.insights": {"version": "1.0.7"}, "redhat.openshift": {"version": "2.1.0"}, "redhat.rhv": {"version": "1.6.5"}, "redhat.satellite": {"version": "3.3.0"}, "servicenow.itsm": {"version": "1.3.3"}, "splunk.es": {"version": "2.0.0"}, "trendmicro.deepsec": {"version": "2.0.0"}, "vmware.vmware_rest": {"version": "2.1.5"}, "vyos.vyos": {"version": "3.0.0"}}}
+2022-12-08 11:40:55,235 p=21 u=root n=ansible | playbook: /home/student/police/demo_roles.yml
+2022-12-08 11:40:55,235 p=21 u=root n=ansible |   play #1 (servera): Use the Custom Roles	TAGS: []
+2022-12-08 11:40:55,237 p=21 u=root n=ansible |     tasks:
+      One more extra task	TAGS: []
+      mail_setup : Mail Server Task 1	TAGS: []
+      mail_setup : Mail Server Task 2	TAGS: []
+      security_setup : Install Firewall package	TAGS: []
+      security_setup : Open the Web Firewall Port	TAGS: []
+      web_server : Install web package	TAGS: []
+      web_server : Deploy the App	TAGS: []
+      web_server : Collect Info from Systems	TAGS: []
+
+2022-12-08 11:41:09,282 p=16 u=root n=ansible | {"/usr/share/ansible/collections/ansible_collections": {"amazon.aws": {"version": "3.2.0"}, "ansible.controller": {"version": "4.2.1"}, "ansible.netcommon": {"version": "3.0.0"}, "ansible.network": {"version": "1.2.0"}, "ansible.posix": {"version": "1.3.0"}, "ansible.security": {"version": "1.0.0"}, "ansible.utils": {"version": "2.6.1"}, "ansible.windows": {"version": "1.9.0"}, "ansible.yang": {"version": "1.0.0"}, "arista.eos": {"version": "5.0.0"}, "cisco.asa": {"version": "3.0.0"}, "cisco.ios": {"version": "3.0.0"}, "cisco.iosxr": {"version": "3.0.0"}, "cisco.nxos": {"version": "3.0.0"}, "cloud.common": {"version": "2.1.1"}, "frr.frr": {"version": "2.0.0"}, "ibm.qradar": {"version": "2.0.0"}, "junipernetworks.junos": {"version": "3.0.0"}, "kubernetes.core": {"version": "2.2.3"}, "openvswitch.openvswitch": {"version": "2.1.0"}, "redhat.insights": {"version": "1.0.7"}, "redhat.openshift": {"version": "2.1.0"}, "redhat.rhv": {"version": "1.6.5"}, "redhat.satellite": {"version": "3.3.0"}, "servicenow.itsm": {"version": "1.3.3"}, "splunk.es": {"version": "2.0.0"}, "trendmicro.deepsec": {"version": "2.0.0"}, "vmware.vmware_rest": {"version": "2.1.5"}, "vyos.vyos": {"version": "3.0.0"}}}
+2022-12-08 11:41:10,687 p=21 u=root n=ansible | PLAY [Use the Custom Roles] ****************************************************
+2022-12-08 11:41:10,707 p=21 u=root n=ansible | TASK [Gathering Facts] *********************************************************
+2022-12-08 11:41:12,354 p=21 u=root n=ansible | ok: [servera]
+2022-12-08 11:41:12,381 p=21 u=root n=ansible | TASK [One more extra task] *****************************************************
+2022-12-08 11:41:16,971 p=21 u=root n=ansible | changed: [servera]
+2022-12-08 11:41:16,984 p=21 u=root n=ansible | TASK [mail_setup : Mail Server Task 1] *****************************************
+2022-12-08 11:41:17,011 p=21 u=root n=ansible | skipping: [servera]
+2022-12-08 11:41:17,025 p=21 u=root n=ansible | TASK [mail_setup : Mail Server Task 2] *****************************************
+2022-12-08 11:41:17,049 p=21 u=root n=ansible | skipping: [servera]
+2022-12-08 11:41:17,076 p=21 u=root n=ansible | TASK [security_setup : Install Firewall package] *******************************
+2022-12-08 11:41:17,099 p=21 u=root n=ansible | skipping: [servera]
+2022-12-08 11:41:17,113 p=21 u=root n=ansible | TASK [security_setup : Open the Web Firewall Port] *****************************
+2022-12-08 11:41:17,137 p=21 u=root n=ansible | skipping: [servera]
+2022-12-08 11:41:17,162 p=21 u=root n=ansible | TASK [web_server : Install web package] ****************************************
+2022-12-08 11:41:17,188 p=21 u=root n=ansible | skipping: [servera]
+2022-12-08 11:41:17,203 p=21 u=root n=ansible | TASK [web_server : Deploy the App] *********************************************
+2022-12-08 11:41:17,229 p=21 u=root n=ansible | skipping: [servera]
+2022-12-08 11:41:17,244 p=21 u=root n=ansible | TASK [web_server : Collect Info from Systems] **********************************
+2022-12-08 11:41:17,272 p=21 u=root n=ansible | skipping: [servera]
+2022-12-08 11:41:17,298 p=21 u=root n=ansible | RUNNING HANDLER [extra_handler] ************************************************
+2022-12-08 11:41:17,347 p=21 u=root n=ansible | ok: [servera] => {
+    "msg": "Just extra cusion"
+}
+2022-12-08 11:41:17,362 p=21 u=root n=ansible | PLAY RECAP *********************************************************************
+2022-12-08 11:41:17,362 p=21 u=root n=ansible | servera                    : ok=3    changed=1    unreachable=0    failed=0    skipped=7    rescued=0    ignored=0   
+2022-12-08 11:41:46,550 p=16 u=root n=ansible | {"/usr/share/ansible/collections/ansible_collections": {"amazon.aws": {"version": "3.2.0"}, "ansible.controller": {"version": "4.2.1"}, "ansible.netcommon": {"version": "3.0.0"}, "ansible.network": {"version": "1.2.0"}, "ansible.posix": {"version": "1.3.0"}, "ansible.security": {"version": "1.0.0"}, "ansible.utils": {"version": "2.6.1"}, "ansible.windows": {"version": "1.9.0"}, "ansible.yang": {"version": "1.0.0"}, "arista.eos": {"version": "5.0.0"}, "cisco.asa": {"version": "3.0.0"}, "cisco.ios": {"version": "3.0.0"}, "cisco.iosxr": {"version": "3.0.0"}, "cisco.nxos": {"version": "3.0.0"}, "cloud.common": {"version": "2.1.1"}, "frr.frr": {"version": "2.0.0"}, "ibm.qradar": {"version": "2.0.0"}, "junipernetworks.junos": {"version": "3.0.0"}, "kubernetes.core": {"version": "2.2.3"}, "openvswitch.openvswitch": {"version": "2.1.0"}, "redhat.insights": {"version": "1.0.7"}, "redhat.openshift": {"version": "2.1.0"}, "redhat.rhv": {"version": "1.6.5"}, "redhat.satellite": {"version": "3.3.0"}, "servicenow.itsm": {"version": "1.3.3"}, "splunk.es": {"version": "2.0.0"}, "trendmicro.deepsec": {"version": "2.0.0"}, "vmware.vmware_rest": {"version": "2.1.5"}, "vyos.vyos": {"version": "3.0.0"}}}
+2022-12-08 11:41:47,942 p=21 u=root n=ansible | PLAY [Use the Custom Roles] ****************************************************
+2022-12-08 11:41:47,962 p=21 u=root n=ansible | TASK [Gathering Facts] *********************************************************
+2022-12-08 11:41:49,619 p=21 u=root n=ansible | ok: [servera]
+2022-12-08 11:41:49,645 p=21 u=root n=ansible | TASK [One more extra task] *****************************************************
+2022-12-08 11:41:54,194 p=21 u=root n=ansible | changed: [servera]
+2022-12-08 11:41:54,208 p=21 u=root n=ansible | TASK [Run role based on condition] *********************************************
+2022-12-08 11:41:54,231 p=21 u=root n=ansible | skipping: [servera]
+2022-12-08 11:41:54,245 p=21 u=root n=ansible | RUNNING HANDLER [extra_handler] ************************************************
+2022-12-08 11:41:54,293 p=21 u=root n=ansible | ok: [servera] => {
+    "msg": "Just extra cusion"
+}
+2022-12-08 11:41:54,314 p=21 u=root n=ansible | PLAY RECAP *********************************************************************
+2022-12-08 11:41:54,315 p=21 u=root n=ansible | servera                    : ok=3    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2022-12-08 06:51:08,110 p=6493 u=student n=ansible | # /usr/share/ansible/roles
+2022-12-08 06:51:28,373 p=6493 u=student n=ansible | - linux-system-roles.certificate, (unknown version)
+2022-12-08 06:51:28,375 p=6493 u=student n=ansible | - linux-system-roles.cockpit, (unknown version)
+2022-12-08 06:51:28,377 p=6493 u=student n=ansible | - linux-system-roles.crypto_policies, (unknown version)
+2022-12-08 06:51:28,379 p=6493 u=student n=ansible | - linux-system-roles.firewall, (unknown version)
+2022-12-08 06:51:28,381 p=6493 u=student n=ansible | - linux-system-roles.ha_cluster, (unknown version)
+2022-12-08 06:51:28,383 p=6493 u=student n=ansible | - linux-system-roles.kdump, (unknown version)
+2022-12-08 06:51:28,385 p=6493 u=student n=ansible | - linux-system-roles.kernel_settings, (unknown version)
+2022-12-08 06:51:28,387 p=6493 u=student n=ansible | - linux-system-roles.logging, (unknown version)
+2022-12-08 06:51:28,389 p=6493 u=student n=ansible | - linux-system-roles.metrics, (unknown version)
+2022-12-08 06:51:28,391 p=6493 u=student n=ansible | - linux-system-roles.nbde_client, (unknown version)
+2022-12-08 06:51:28,393 p=6493 u=student n=ansible | - linux-system-roles.nbde_server, (unknown version)
+2022-12-08 06:51:28,394 p=6493 u=student n=ansible | - linux-system-roles.network, (unknown version)
+2022-12-08 06:51:28,397 p=6493 u=student n=ansible | - linux-system-roles.postfix, (unknown version)
+2022-12-08 06:51:28,398 p=6493 u=student n=ansible | - linux-system-roles.selinux, (unknown version)
+2022-12-08 06:51:28,401 p=6493 u=student n=ansible | - linux-system-roles.ssh, (unknown version)
+2022-12-08 06:51:28,404 p=6493 u=student n=ansible | - linux-system-roles.sshd, (unknown version)
+2022-12-08 06:51:28,406 p=6493 u=student n=ansible | - linux-system-roles.storage, (unknown version)
+2022-12-08 06:51:28,408 p=6493 u=student n=ansible | - linux-system-roles.timesync, (unknown version)
+2022-12-08 06:51:28,410 p=6493 u=student n=ansible | - linux-system-roles.tlog, (unknown version)
+2022-12-08 06:51:28,411 p=6493 u=student n=ansible | - linux-system-roles.vpn, (unknown version)
+2022-12-08 06:51:28,412 p=6493 u=student n=ansible | - rhel-system-roles.certificate, (unknown version)
+2022-12-08 06:51:28,413 p=6493 u=student n=ansible | - rhel-system-roles.cockpit, (unknown version)
+2022-12-08 06:51:28,413 p=6493 u=student n=ansible | - rhel-system-roles.crypto_policies, (unknown version)
+2022-12-08 06:51:28,414 p=6493 u=student n=ansible | - rhel-system-roles.firewall, (unknown version)
+2022-12-08 06:51:28,414 p=6493 u=student n=ansible | - rhel-system-roles.ha_cluster, (unknown version)
+2022-12-08 06:51:28,415 p=6493 u=student n=ansible | - rhel-system-roles.kdump, (unknown version)
+2022-12-08 06:51:28,415 p=6493 u=student n=ansible | - rhel-system-roles.kernel_settings, (unknown version)
+2022-12-08 06:51:28,416 p=6493 u=student n=ansible | - rhel-system-roles.logging, (unknown version)
+2022-12-08 06:51:28,417 p=6493 u=student n=ansible | - rhel-system-roles.metrics, (unknown version)
+2022-12-08 06:51:28,418 p=6493 u=student n=ansible | - rhel-system-roles.nbde_client, (unknown version)
+2022-12-08 06:51:28,418 p=6493 u=student n=ansible | - rhel-system-roles.nbde_server, (unknown version)
+2022-12-08 06:51:28,419 p=6493 u=student n=ansible | - rhel-system-roles.network, (unknown version)
+2022-12-08 06:51:28,420 p=6493 u=student n=ansible | - rhel-system-roles.postfix, (unknown version)
+2022-12-08 06:51:28,420 p=6493 u=student n=ansible | - rhel-system-roles.selinux, (unknown version)
+2022-12-08 06:51:28,421 p=6493 u=student n=ansible | - rhel-system-roles.ssh, (unknown version)
+2022-12-08 06:51:28,422 p=6493 u=student n=ansible | - rhel-system-roles.sshd, (unknown version)
+2022-12-08 06:51:28,422 p=6493 u=student n=ansible | - rhel-system-roles.storage, (unknown version)
+2022-12-08 06:51:28,423 p=6493 u=student n=ansible | - rhel-system-roles.timesync, (unknown version)
+2022-12-08 06:51:28,423 p=6493 u=student n=ansible | - rhel-system-roles.tlog, (unknown version)
+2022-12-08 06:51:28,424 p=6493 u=student n=ansible | - rhel-system-roles.vpn, (unknown version)
+2022-12-08 06:51:28,424 p=6493 u=student n=ansible | # /etc/ansible/roles
+2022-12-08 06:51:28,425 p=6493 u=student n=ansible | [WARNING]: - the configured path /home/student/.ansible/roles does not exist.
+
+2022-12-08 11:53:00,495 p=16 u=root n=ansible | {"/usr/share/ansible/collections/ansible_collections": {"amazon.aws": {"version": "3.2.0"}, "ansible.controller": {"version": "4.2.1"}, "ansible.netcommon": {"version": "3.0.0"}, "ansible.network": {"version": "1.2.0"}, "ansible.posix": {"version": "1.3.0"}, "ansible.security": {"version": "1.0.0"}, "ansible.utils": {"version": "2.6.1"}, "ansible.windows": {"version": "1.9.0"}, "ansible.yang": {"version": "1.0.0"}, "arista.eos": {"version": "5.0.0"}, "cisco.asa": {"version": "3.0.0"}, "cisco.ios": {"version": "3.0.0"}, "cisco.iosxr": {"version": "3.0.0"}, "cisco.nxos": {"version": "3.0.0"}, "cloud.common": {"version": "2.1.1"}, "frr.frr": {"version": "2.0.0"}, "ibm.qradar": {"version": "2.0.0"}, "junipernetworks.junos": {"version": "3.0.0"}, "kubernetes.core": {"version": "2.2.3"}, "openvswitch.openvswitch": {"version": "2.1.0"}, "redhat.insights": {"version": "1.0.7"}, "redhat.openshift": {"version": "2.1.0"}, "redhat.rhv": {"version": "1.6.5"}, "redhat.satellite": {"version": "3.3.0"}, "servicenow.itsm": {"version": "1.3.3"}, "splunk.es": {"version": "2.0.0"}, "trendmicro.deepsec": {"version": "2.0.0"}, "vmware.vmware_rest": {"version": "2.1.5"}, "vyos.vyos": {"version": "3.0.0"}}}
+2022-12-08 11:53:01,885 p=21 u=root n=ansible | ERROR! the role 'mail_setup' was not found in ansible.legacy:/home/student/police/roles:/home/runner/.ansible/roles:/usr/share/ansible/roles:/etc/ansible/roles:/home/student/police/roles:/home/student/police
+
+The error appears to be in '/home/student/police/roles/web_server/meta/main.yml': line 13, column 5, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+dependencies:
+  - role: mail_setup
+    ^ here
+
+2022-12-08 06:54:41,209 p=6655 u=student n=ansible | # /home/student/police/roles
+2022-12-08 06:55:01,461 p=6655 u=student n=ansible | - web_server, (unknown version)
+2022-12-08 06:55:01,462 p=6655 u=student n=ansible | - security_setup, (unknown version)
+2022-12-08 06:55:01,462 p=6655 u=student n=ansible | # /usr/share/ansible/roles
+2022-12-08 06:55:01,463 p=6655 u=student n=ansible | - linux-system-roles.certificate, (unknown version)
+2022-12-08 06:55:01,463 p=6655 u=student n=ansible | - linux-system-roles.cockpit, (unknown version)
+2022-12-08 06:55:01,464 p=6655 u=student n=ansible | - linux-system-roles.crypto_policies, (unknown version)
+2022-12-08 06:55:01,464 p=6655 u=student n=ansible | - linux-system-roles.firewall, (unknown version)
+2022-12-08 06:55:01,465 p=6655 u=student n=ansible | - linux-system-roles.ha_cluster, (unknown version)
+2022-12-08 06:55:01,466 p=6655 u=student n=ansible | - linux-system-roles.kdump, (unknown version)
+2022-12-08 06:55:01,466 p=6655 u=student n=ansible | - linux-system-roles.kernel_settings, (unknown version)
+2022-12-08 06:55:01,467 p=6655 u=student n=ansible | - linux-system-roles.logging, (unknown version)
+2022-12-08 06:55:01,468 p=6655 u=student n=ansible | - linux-system-roles.metrics, (unknown version)
+2022-12-08 06:55:01,468 p=6655 u=student n=ansible | - linux-system-roles.nbde_client, (unknown version)
+2022-12-08 06:55:01,469 p=6655 u=student n=ansible | - linux-system-roles.nbde_server, (unknown version)
+2022-12-08 06:55:01,469 p=6655 u=student n=ansible | - linux-system-roles.network, (unknown version)
+2022-12-08 06:55:01,470 p=6655 u=student n=ansible | - linux-system-roles.postfix, (unknown version)
+2022-12-08 06:55:01,471 p=6655 u=student n=ansible | - linux-system-roles.selinux, (unknown version)
+2022-12-08 06:55:01,471 p=6655 u=student n=ansible | - linux-system-roles.ssh, (unknown version)
+2022-12-08 06:55:01,473 p=6655 u=student n=ansible | - linux-system-roles.sshd, (unknown version)
+2022-12-08 06:55:01,474 p=6655 u=student n=ansible | - linux-system-roles.storage, (unknown version)
+2022-12-08 06:55:01,474 p=6655 u=student n=ansible | - linux-system-roles.timesync, (unknown version)
+2022-12-08 06:55:01,475 p=6655 u=student n=ansible | - linux-system-roles.tlog, (unknown version)
+2022-12-08 06:55:01,476 p=6655 u=student n=ansible | - linux-system-roles.vpn, (unknown version)
+2022-12-08 06:55:01,477 p=6655 u=student n=ansible | - rhel-system-roles.certificate, (unknown version)
+2022-12-08 06:55:01,477 p=6655 u=student n=ansible | - rhel-system-roles.cockpit, (unknown version)
+2022-12-08 06:55:01,478 p=6655 u=student n=ansible | - rhel-system-roles.crypto_policies, (unknown version)
+2022-12-08 06:55:01,478 p=6655 u=student n=ansible | - rhel-system-roles.firewall, (unknown version)
+2022-12-08 06:55:01,479 p=6655 u=student n=ansible | - rhel-system-roles.ha_cluster, (unknown version)
+2022-12-08 06:55:01,479 p=6655 u=student n=ansible | - rhel-system-roles.kdump, (unknown version)
+2022-12-08 06:55:01,480 p=6655 u=student n=ansible | - rhel-system-roles.kernel_settings, (unknown version)
+2022-12-08 06:55:01,480 p=6655 u=student n=ansible | - rhel-system-roles.logging, (unknown version)
+2022-12-08 06:55:01,481 p=6655 u=student n=ansible | - rhel-system-roles.metrics, (unknown version)
+2022-12-08 06:55:01,482 p=6655 u=student n=ansible | - rhel-system-roles.nbde_client, (unknown version)
+2022-12-08 06:55:01,482 p=6655 u=student n=ansible | - rhel-system-roles.nbde_server, (unknown version)
+2022-12-08 06:55:01,483 p=6655 u=student n=ansible | - rhel-system-roles.network, (unknown version)
+2022-12-08 06:55:01,483 p=6655 u=student n=ansible | - rhel-system-roles.postfix, (unknown version)
+2022-12-08 06:55:01,484 p=6655 u=student n=ansible | - rhel-system-roles.selinux, (unknown version)
+2022-12-08 06:55:01,485 p=6655 u=student n=ansible | - rhel-system-roles.ssh, (unknown version)
+2022-12-08 06:55:01,486 p=6655 u=student n=ansible | - rhel-system-roles.sshd, (unknown version)
+2022-12-08 06:55:01,486 p=6655 u=student n=ansible | - rhel-system-roles.storage, (unknown version)
+2022-12-08 06:55:01,487 p=6655 u=student n=ansible | - rhel-system-roles.timesync, (unknown version)
+2022-12-08 06:55:01,487 p=6655 u=student n=ansible | - rhel-system-roles.tlog, (unknown version)
+2022-12-08 06:55:01,488 p=6655 u=student n=ansible | - rhel-system-roles.vpn, (unknown version)
+2022-12-08 06:55:01,489 p=6655 u=student n=ansible | # /etc/ansible/roles
+2022-12-08 06:55:01,489 p=6655 u=student n=ansible | [WARNING]: - the configured path /home/student/mail_setup does not exist.
+
+2022-12-08 06:55:43,951 p=6659 u=student n=ansible | # /home/student/frode_roles
+2022-12-08 06:56:04,205 p=6659 u=student n=ansible | - mail_setup, (unknown version)
+2022-12-08 06:56:04,205 p=6659 u=student n=ansible | # /home/student/police/roles
+2022-12-08 06:56:04,206 p=6659 u=student n=ansible | - web_server, (unknown version)
+2022-12-08 06:56:04,206 p=6659 u=student n=ansible | - security_setup, (unknown version)
+2022-12-08 06:56:04,207 p=6659 u=student n=ansible | # /usr/share/ansible/roles
+2022-12-08 06:56:04,207 p=6659 u=student n=ansible | - linux-system-roles.certificate, (unknown version)
+2022-12-08 06:56:04,208 p=6659 u=student n=ansible | - linux-system-roles.cockpit, (unknown version)
+2022-12-08 06:56:04,209 p=6659 u=student n=ansible | - linux-system-roles.crypto_policies, (unknown version)
+2022-12-08 06:56:04,209 p=6659 u=student n=ansible | - linux-system-roles.firewall, (unknown version)
+2022-12-08 06:56:04,210 p=6659 u=student n=ansible | - linux-system-roles.ha_cluster, (unknown version)
+2022-12-08 06:56:04,210 p=6659 u=student n=ansible | - linux-system-roles.kdump, (unknown version)
+2022-12-08 06:56:04,211 p=6659 u=student n=ansible | - linux-system-roles.kernel_settings, (unknown version)
+2022-12-08 06:56:04,211 p=6659 u=student n=ansible | - linux-system-roles.logging, (unknown version)
+2022-12-08 06:56:04,212 p=6659 u=student n=ansible | - linux-system-roles.metrics, (unknown version)
+2022-12-08 06:56:04,213 p=6659 u=student n=ansible | - linux-system-roles.nbde_client, (unknown version)
+2022-12-08 06:56:04,213 p=6659 u=student n=ansible | - linux-system-roles.nbde_server, (unknown version)
+2022-12-08 06:56:04,214 p=6659 u=student n=ansible | - linux-system-roles.network, (unknown version)
+2022-12-08 06:56:04,214 p=6659 u=student n=ansible | - linux-system-roles.postfix, (unknown version)
+2022-12-08 06:56:04,215 p=6659 u=student n=ansible | - linux-system-roles.selinux, (unknown version)
+2022-12-08 06:56:04,216 p=6659 u=student n=ansible | - linux-system-roles.ssh, (unknown version)
+2022-12-08 06:56:04,217 p=6659 u=student n=ansible | - linux-system-roles.sshd, (unknown version)
+2022-12-08 06:56:04,217 p=6659 u=student n=ansible | - linux-system-roles.storage, (unknown version)
+2022-12-08 06:56:04,218 p=6659 u=student n=ansible | - linux-system-roles.timesync, (unknown version)
+2022-12-08 06:56:04,219 p=6659 u=student n=ansible | - linux-system-roles.tlog, (unknown version)
+2022-12-08 06:56:04,219 p=6659 u=student n=ansible | - linux-system-roles.vpn, (unknown version)
+2022-12-08 06:56:04,220 p=6659 u=student n=ansible | - rhel-system-roles.certificate, (unknown version)
+2022-12-08 06:56:04,221 p=6659 u=student n=ansible | - rhel-system-roles.cockpit, (unknown version)
+2022-12-08 06:56:04,221 p=6659 u=student n=ansible | - rhel-system-roles.crypto_policies, (unknown version)
+2022-12-08 06:56:04,222 p=6659 u=student n=ansible | - rhel-system-roles.firewall, (unknown version)
+2022-12-08 06:56:04,222 p=6659 u=student n=ansible | - rhel-system-roles.ha_cluster, (unknown version)
+2022-12-08 06:56:04,223 p=6659 u=student n=ansible | - rhel-system-roles.kdump, (unknown version)
+2022-12-08 06:56:04,224 p=6659 u=student n=ansible | - rhel-system-roles.kernel_settings, (unknown version)
+2022-12-08 06:56:04,224 p=6659 u=student n=ansible | - rhel-system-roles.logging, (unknown version)
+2022-12-08 06:56:04,225 p=6659 u=student n=ansible | - rhel-system-roles.metrics, (unknown version)
+2022-12-08 06:56:04,225 p=6659 u=student n=ansible | - rhel-system-roles.nbde_client, (unknown version)
+2022-12-08 06:56:04,226 p=6659 u=student n=ansible | - rhel-system-roles.nbde_server, (unknown version)
+2022-12-08 06:56:04,227 p=6659 u=student n=ansible | - rhel-system-roles.network, (unknown version)
+2022-12-08 06:56:04,227 p=6659 u=student n=ansible | - rhel-system-roles.postfix, (unknown version)
+2022-12-08 06:56:04,228 p=6659 u=student n=ansible | - rhel-system-roles.selinux, (unknown version)
+2022-12-08 06:56:04,228 p=6659 u=student n=ansible | - rhel-system-roles.ssh, (unknown version)
+2022-12-08 06:56:04,229 p=6659 u=student n=ansible | - rhel-system-roles.sshd, (unknown version)
+2022-12-08 06:56:04,230 p=6659 u=student n=ansible | - rhel-system-roles.storage, (unknown version)
+2022-12-08 06:56:04,230 p=6659 u=student n=ansible | - rhel-system-roles.timesync, (unknown version)
+2022-12-08 06:56:04,231 p=6659 u=student n=ansible | - rhel-system-roles.tlog, (unknown version)
+2022-12-08 06:56:04,232 p=6659 u=student n=ansible | - rhel-system-roles.vpn, (unknown version)
+2022-12-08 06:56:04,232 p=6659 u=student n=ansible | # /etc/ansible/roles
+2022-12-08 07:05:20,086 p=6673 u=student n=ansible | - Role marius was created successfully
+2022-12-08 07:05:30,992 p=6678 u=student n=ansible | # /home/student/frode_roles
+2022-12-08 07:05:51,248 p=6678 u=student n=ansible | - mail_setup, (unknown version)
+2022-12-08 07:05:51,248 p=6678 u=student n=ansible | # /home/student/police/roles
+2022-12-08 07:05:51,248 p=6678 u=student n=ansible | - web_server, (unknown version)
+2022-12-08 07:05:51,249 p=6678 u=student n=ansible | - security_setup, (unknown version)
+2022-12-08 07:05:51,250 p=6678 u=student n=ansible | - marius, (unknown version)
+2022-12-08 07:05:51,250 p=6678 u=student n=ansible | # /usr/share/ansible/roles
+2022-12-08 07:05:51,250 p=6678 u=student n=ansible | - linux-system-roles.certificate, (unknown version)
+2022-12-08 07:05:51,251 p=6678 u=student n=ansible | - linux-system-roles.cockpit, (unknown version)
+2022-12-08 07:05:51,252 p=6678 u=student n=ansible | - linux-system-roles.crypto_policies, (unknown version)
+2022-12-08 07:05:51,252 p=6678 u=student n=ansible | - linux-system-roles.firewall, (unknown version)
+2022-12-08 07:05:51,253 p=6678 u=student n=ansible | - linux-system-roles.ha_cluster, (unknown version)
+2022-12-08 07:05:51,253 p=6678 u=student n=ansible | - linux-system-roles.kdump, (unknown version)
+2022-12-08 07:05:51,254 p=6678 u=student n=ansible | - linux-system-roles.kernel_settings, (unknown version)
+2022-12-08 07:05:51,255 p=6678 u=student n=ansible | - linux-system-roles.logging, (unknown version)
+2022-12-08 07:05:51,255 p=6678 u=student n=ansible | - linux-system-roles.metrics, (unknown version)
+2022-12-08 07:05:51,256 p=6678 u=student n=ansible | - linux-system-roles.nbde_client, (unknown version)
+2022-12-08 07:05:51,257 p=6678 u=student n=ansible | - linux-system-roles.nbde_server, (unknown version)
+2022-12-08 07:05:51,257 p=6678 u=student n=ansible | - linux-system-roles.network, (unknown version)
+2022-12-08 07:05:51,258 p=6678 u=student n=ansible | - linux-system-roles.postfix, (unknown version)
+2022-12-08 07:05:51,259 p=6678 u=student n=ansible | - linux-system-roles.selinux, (unknown version)
+2022-12-08 07:05:51,260 p=6678 u=student n=ansible | - linux-system-roles.ssh, (unknown version)
+2022-12-08 07:05:51,261 p=6678 u=student n=ansible | - linux-system-roles.sshd, (unknown version)
+2022-12-08 07:05:51,261 p=6678 u=student n=ansible | - linux-system-roles.storage, (unknown version)
+2022-12-08 07:05:51,262 p=6678 u=student n=ansible | - linux-system-roles.timesync, (unknown version)
+2022-12-08 07:05:51,263 p=6678 u=student n=ansible | - linux-system-roles.tlog, (unknown version)
+2022-12-08 07:05:51,264 p=6678 u=student n=ansible | - linux-system-roles.vpn, (unknown version)
+2022-12-08 07:05:51,266 p=6678 u=student n=ansible | - rhel-system-roles.certificate, (unknown version)
+2022-12-08 07:05:51,267 p=6678 u=student n=ansible | - rhel-system-roles.cockpit, (unknown version)
+2022-12-08 07:05:51,268 p=6678 u=student n=ansible | - rhel-system-roles.crypto_policies, (unknown version)
+2022-12-08 07:05:51,269 p=6678 u=student n=ansible | - rhel-system-roles.firewall, (unknown version)
+2022-12-08 07:05:51,270 p=6678 u=student n=ansible | - rhel-system-roles.ha_cluster, (unknown version)
+2022-12-08 07:05:51,271 p=6678 u=student n=ansible | - rhel-system-roles.kdump, (unknown version)
+2022-12-08 07:05:51,272 p=6678 u=student n=ansible | - rhel-system-roles.kernel_settings, (unknown version)
+2022-12-08 07:05:51,273 p=6678 u=student n=ansible | - rhel-system-roles.logging, (unknown version)
+2022-12-08 07:05:51,274 p=6678 u=student n=ansible | - rhel-system-roles.metrics, (unknown version)
+2022-12-08 07:05:51,275 p=6678 u=student n=ansible | - rhel-system-roles.nbde_client, (unknown version)
+2022-12-08 07:05:51,276 p=6678 u=student n=ansible | - rhel-system-roles.nbde_server, (unknown version)
+2022-12-08 07:05:51,277 p=6678 u=student n=ansible | - rhel-system-roles.network, (unknown version)
+2022-12-08 07:05:51,278 p=6678 u=student n=ansible | - rhel-system-roles.postfix, (unknown version)
+2022-12-08 07:05:51,279 p=6678 u=student n=ansible | - rhel-system-roles.selinux, (unknown version)
+2022-12-08 07:05:51,280 p=6678 u=student n=ansible | - rhel-system-roles.ssh, (unknown version)
+2022-12-08 07:05:51,281 p=6678 u=student n=ansible | - rhel-system-roles.sshd, (unknown version)
+2022-12-08 07:05:51,282 p=6678 u=student n=ansible | - rhel-system-roles.storage, (unknown version)
+2022-12-08 07:05:51,282 p=6678 u=student n=ansible | - rhel-system-roles.timesync, (unknown version)
+2022-12-08 07:05:51,283 p=6678 u=student n=ansible | - rhel-system-roles.tlog, (unknown version)
+2022-12-08 07:05:51,283 p=6678 u=student n=ansible | - rhel-system-roles.vpn, (unknown version)
+2022-12-08 07:05:51,284 p=6678 u=student n=ansible | # /etc/ansible/roles
+2022-12-08 07:06:35,039 p=6684 u=student n=ansible |  [ERROR]: User interrupted execution
+
+2022-12-08 07:06:58,539 p=6686 u=student n=ansible |  [ERROR]: User interrupted execution
+
+2022-12-08 07:07:25,840 p=6691 u=student n=ansible | - marius is not installed, skipping.
+2022-12-08 08:11:24,358 p=1960 u=student n=ansible | # /home/student/frode_roles
+2022-12-08 08:11:44,614 p=1960 u=student n=ansible | - mail_setup, (unknown version)
+2022-12-08 08:11:44,614 p=1960 u=student n=ansible | # /home/student/police/roles
+2022-12-08 08:11:44,616 p=1960 u=student n=ansible | - web_server, (unknown version)
+2022-12-08 08:11:44,616 p=1960 u=student n=ansible | - security_setup, (unknown version)
+2022-12-08 08:11:44,617 p=1960 u=student n=ansible | - marius, (unknown version)
+2022-12-08 08:11:44,617 p=1960 u=student n=ansible | # /usr/share/ansible/roles
+2022-12-08 08:11:44,620 p=1960 u=student n=ansible | - linux-system-roles.certificate, (unknown version)
+2022-12-08 08:11:44,622 p=1960 u=student n=ansible | - linux-system-roles.cockpit, (unknown version)
+2022-12-08 08:11:44,625 p=1960 u=student n=ansible | - linux-system-roles.crypto_policies, (unknown version)
+2022-12-08 08:11:44,627 p=1960 u=student n=ansible | - linux-system-roles.firewall, (unknown version)
+2022-12-08 08:11:44,629 p=1960 u=student n=ansible | - linux-system-roles.ha_cluster, (unknown version)
+2022-12-08 08:11:44,631 p=1960 u=student n=ansible | - linux-system-roles.kdump, (unknown version)
+2022-12-08 08:11:44,632 p=1960 u=student n=ansible | - linux-system-roles.kernel_settings, (unknown version)
+2022-12-08 08:11:44,634 p=1960 u=student n=ansible | - linux-system-roles.logging, (unknown version)
+2022-12-08 08:11:44,637 p=1960 u=student n=ansible | - linux-system-roles.metrics, (unknown version)
+2022-12-08 08:11:44,640 p=1960 u=student n=ansible | - linux-system-roles.nbde_client, (unknown version)
+2022-12-08 08:11:44,643 p=1960 u=student n=ansible | - linux-system-roles.nbde_server, (unknown version)
+2022-12-08 08:11:44,646 p=1960 u=student n=ansible | - linux-system-roles.network, (unknown version)
+2022-12-08 08:11:44,649 p=1960 u=student n=ansible | - linux-system-roles.postfix, (unknown version)
+2022-12-08 08:11:44,650 p=1960 u=student n=ansible | - linux-system-roles.selinux, (unknown version)
+2022-12-08 08:11:44,653 p=1960 u=student n=ansible | - linux-system-roles.ssh, (unknown version)
+2022-12-08 08:11:44,655 p=1960 u=student n=ansible | - linux-system-roles.sshd, (unknown version)
+2022-12-08 08:11:44,657 p=1960 u=student n=ansible | - linux-system-roles.storage, (unknown version)
+2022-12-08 08:11:44,658 p=1960 u=student n=ansible | - linux-system-roles.timesync, (unknown version)
+2022-12-08 08:11:44,660 p=1960 u=student n=ansible | - linux-system-roles.tlog, (unknown version)
+2022-12-08 08:11:44,662 p=1960 u=student n=ansible | - linux-system-roles.vpn, (unknown version)
+2022-12-08 08:11:44,663 p=1960 u=student n=ansible | - rhel-system-roles.certificate, (unknown version)
+2022-12-08 08:11:44,664 p=1960 u=student n=ansible | - rhel-system-roles.cockpit, (unknown version)
+2022-12-08 08:11:44,664 p=1960 u=student n=ansible | - rhel-system-roles.crypto_policies, (unknown version)
+2022-12-08 08:11:44,665 p=1960 u=student n=ansible | - rhel-system-roles.firewall, (unknown version)
+2022-12-08 08:11:44,665 p=1960 u=student n=ansible | - rhel-system-roles.ha_cluster, (unknown version)
+2022-12-08 08:11:44,666 p=1960 u=student n=ansible | - rhel-system-roles.kdump, (unknown version)
+2022-12-08 08:11:44,666 p=1960 u=student n=ansible | - rhel-system-roles.kernel_settings, (unknown version)
+2022-12-08 08:11:44,667 p=1960 u=student n=ansible | - rhel-system-roles.logging, (unknown version)
+2022-12-08 08:11:44,668 p=1960 u=student n=ansible | - rhel-system-roles.metrics, (unknown version)
+2022-12-08 08:11:44,668 p=1960 u=student n=ansible | - rhel-system-roles.nbde_client, (unknown version)
+2022-12-08 08:11:44,669 p=1960 u=student n=ansible | - rhel-system-roles.nbde_server, (unknown version)
+2022-12-08 08:11:44,669 p=1960 u=student n=ansible | - rhel-system-roles.network, (unknown version)
+2022-12-08 08:11:44,670 p=1960 u=student n=ansible | - rhel-system-roles.postfix, (unknown version)
+2022-12-08 08:11:44,670 p=1960 u=student n=ansible | - rhel-system-roles.selinux, (unknown version)
+2022-12-08 08:11:44,671 p=1960 u=student n=ansible | - rhel-system-roles.ssh, (unknown version)
+2022-12-08 08:11:44,672 p=1960 u=student n=ansible | - rhel-system-roles.sshd, (unknown version)
+2022-12-08 08:11:44,673 p=1960 u=student n=ansible | - rhel-system-roles.storage, (unknown version)
+2022-12-08 08:11:44,673 p=1960 u=student n=ansible | - rhel-system-roles.timesync, (unknown version)
+2022-12-08 08:11:44,674 p=1960 u=student n=ansible | - rhel-system-roles.tlog, (unknown version)
+2022-12-08 08:11:44,675 p=1960 u=student n=ansible | - rhel-system-roles.vpn, (unknown version)
+2022-12-08 08:11:44,675 p=1960 u=student n=ansible | # /etc/ansible/roles
+2022-12-08 08:13:01,824 p=1978 u=student n=ansible | ERROR! the role 'php-versions' was not found in geerlingguy.php_roles:ansible.legacy:/home/student/police/roles:/home/student/frode_roles:/home/student/police/roles:/usr/share/ansible/roles:/etc/ansible/roles:/home/student/police
+
+The error appears to be in '/home/student/police/use_collections.yml': line 8, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+    - php
+    - role: php-versions
+      ^ here
+
+2022-12-08 08:13:54,962 p=1992 u=student n=ansible | # /home/student/police/collections/ansible_collections
+Collection            Version
+--------------------- -------
+
+2022-12-08 08:13:54,962 p=1992 u=student n=ansible | community.general     6.1.0  
+2022-12-08 08:13:54,963 p=1992 u=student n=ansible | geerlingguy.php_roles 2.0.0  
+2022-12-08 08:14:49,031 p=2013 u=student n=ansible | # /usr/share/ansible/collections/ansible_collections
+Collection               Version
+------------------------ -------
+
+2022-12-08 08:14:49,031 p=2013 u=student n=ansible | redhat.rhel_system_roles 1.16.2 
+2022-12-08 08:15:19,210 p=2016 u=student n=ansible | ERROR! the role 'php-versions' was not found in geerlingguy.php_roles:ansible.legacy:/home/student/police/roles:/home/student/frode_roles:/home/student/police/roles:/usr/share/ansible/roles:/etc/ansible/roles:/home/student/police
+
+The error appears to be in '/home/student/police/use_collections.yml': line 8, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+    - php
+    - role: php-versions
+      ^ here
+
+2022-12-08 08:15:22,130 p=2025 u=student n=ansible | ERROR! the role 'php-versions' was not found in geerlingguy.php_roles:ansible.legacy:/home/student/police/roles:/home/student/frode_roles:/home/student/police/roles:/usr/share/ansible/roles:/etc/ansible/roles:/home/student/police
+
+The error appears to be in '/home/student/police/use_collections.yml': line 8, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+    - php
+    - role: php-versions
+      ^ here
+
+2022-12-08 08:15:46,684 p=2034 u=student n=ansible | ERROR! the role 'php' was not found in /home/student/police/roles:/home/student/frode_roles:/home/student/police/roles:/usr/share/ansible/roles:/etc/ansible/roles:/home/student/police
+
+The error appears to be in '/home/student/police/use_collections.yml': line 7, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  roles:
+    - php
+      ^ here
+
+2022-12-08 08:15:56,210 p=2043 u=student n=ansible | ERROR! the role 'php' was not found in /home/student/police/roles:/home/student/frode_roles:/home/student/police/roles:/usr/share/ansible/roles:/etc/ansible/roles:/home/student/police
+
+The error appears to be in '/home/student/police/use_collections.yml': line 7, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  roles:
+    - role: php
+      ^ here
+
+2022-12-08 08:16:54,224 p=2052 u=student n=ansible | ERROR! the role 'geerlingguy.php_roles.php-versions' was not found in /home/student/police/roles:/home/student/frode_roles:/home/student/police/roles:/usr/share/ansible/roles:/etc/ansible/roles:/home/student/police
+
+The error appears to be in '/home/student/police/use_collections.yml': line 8, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+    - role: geerlingguy.php_roles.php
+    - role: geerlingguy.php_roles.php-versions
+      ^ here
+
+2022-12-08 08:19:28,992 p=2123 u=student n=ansible | ERROR! the role 'geerlingguy.php_roles.php-versions' was not found in /home/student/police/roles:/home/student/frode_roles:/home/student/police/roles:/usr/share/ansible/roles:/etc/ansible/roles:/home/student/police
+
+The error appears to be in '/home/student/police/use_collections.yml': line 8, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+    - role: geerlingguy.php_roles.php
+    - role: geerlingguy.php_roles.php-versions
+      ^ here
+
+2022-12-08 08:19:56,882 p=2133 u=student n=ansible | # /home/student/police/collections/ansible_collections
+Collection            Version
+--------------------- -------
+
+2022-12-08 08:19:56,882 p=2133 u=student n=ansible | community.general     6.1.0  
+2022-12-08 08:19:56,882 p=2133 u=student n=ansible | geerlingguy.php_roles 2.0.0  
+2022-12-08 08:20:37,388 p=2135 u=student n=ansible | playbook: use_collections.yml
+2022-12-08 08:20:37,388 p=2135 u=student n=ansible |   play #1 (servera): Collection use	TAGS: []
+2022-12-08 08:20:37,394 p=2135 u=student n=ansible |     tasks:
+
+2022-12-08 08:20:58,166 p=2144 u=student n=ansible | PLAY [Collection use] ****************************************************************************************
+2022-12-08 08:20:58,252 p=2144 u=student n=ansible | TASK [Gathering Facts] ***************************************************************************************
+2022-12-08 08:21:00,177 p=2144 u=student n=ansible | ok: [servera]
+2022-12-08 08:21:00,226 p=2144 u=student n=ansible | PLAY RECAP ***************************************************************************************************
+2022-12-08 08:21:00,226 p=2144 u=student n=ansible | servera                    : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-12-08 08:21:46,496 p=2193 u=student n=ansible | PLAY [Collection use] ****************************************************************************************
+2022-12-08 08:21:46,542 p=2193 u=student n=ansible | TASK [Gathering Facts] ***************************************************************************************
+2022-12-08 08:21:47,881 p=2193 u=student n=ansible | ok: [servera]
+2022-12-08 08:21:47,918 p=2193 u=student n=ansible | PLAY RECAP ***************************************************************************************************
+2022-12-08 08:21:47,919 p=2193 u=student n=ansible | servera                    : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-12-08 08:21:56,796 p=2215 u=student n=ansible | playbook: use_collections.yml
+2022-12-08 08:21:56,797 p=2215 u=student n=ansible |   play #1 (servera): Collection use	TAGS: []
+2022-12-08 08:21:56,800 p=2215 u=student n=ansible |     tasks:
+
+2022-12-08 08:24:58,467 p=2333 u=student n=ansible | playbook: use_collections.yml
+2022-12-08 08:24:58,468 p=2333 u=student n=ansible |   play #1 (servera): Collection use	TAGS: []
+2022-12-08 08:24:58,469 p=2333 u=student n=ansible |     tasks:
+      awedfsd	TAGS: []
+
+2022-12-08 08:25:01,380 p=2342 u=student n=ansible | PLAY [Collection use] ****************************************************************************************
+2022-12-08 08:25:01,420 p=2342 u=student n=ansible | TASK [Gathering Facts] ***************************************************************************************
+2022-12-08 08:25:03,079 p=2342 u=student n=ansible | ok: [servera]
+2022-12-08 08:25:03,108 p=2342 u=student n=ansible | TASK [awedfsd] ***********************************************************************************************
+2022-12-08 08:25:03,693 p=2342 u=student n=ansible | fatal: [servera]: FAILED! => {"changed": false, "msg": "missing required arguments: name"}
+2022-12-08 08:25:03,694 p=2342 u=student n=ansible | PLAY RECAP ***************************************************************************************************
+2022-12-08 08:25:03,694 p=2342 u=student n=ansible | servera                    : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2022-12-08 08:25:20,684 p=2376 u=student n=ansible | PLAY [Collection use] ****************************************************************************************
+2022-12-08 08:25:20,729 p=2376 u=student n=ansible | TASK [Gathering Facts] ***************************************************************************************
+2022-12-08 08:25:22,082 p=2376 u=student n=ansible | ok: [servera]
+2022-12-08 08:25:22,113 p=2376 u=student n=ansible | TASK [awedfsd] ***********************************************************************************************
+2022-12-08 08:25:22,672 p=2376 u=student n=ansible | fatal: [servera]: FAILED! => {"changed": false, "msg": "Failed to find required executable \"vdo\" in paths: /sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin"}
+2022-12-08 08:25:22,674 p=2376 u=student n=ansible | PLAY RECAP ***************************************************************************************************
+2022-12-08 08:25:22,674 p=2376 u=student n=ansible | servera                    : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2022-12-08 08:28:47,281 p=2419 u=student n=ansible | # /home/student/frode_roles
+2022-12-08 08:29:07,540 p=2419 u=student n=ansible | - mail_setup, (unknown version)
+2022-12-08 08:29:07,540 p=2419 u=student n=ansible | # /home/student/police/roles
+2022-12-08 08:29:07,541 p=2419 u=student n=ansible | - web_server, (unknown version)
+2022-12-08 08:29:07,541 p=2419 u=student n=ansible | - security_setup, (unknown version)
+2022-12-08 08:29:07,542 p=2419 u=student n=ansible | - marius, (unknown version)
+2022-12-08 08:29:07,542 p=2419 u=student n=ansible | # /usr/share/ansible/roles
+2022-12-08 08:29:07,542 p=2419 u=student n=ansible | - linux-system-roles.certificate, (unknown version)
+2022-12-08 08:29:07,543 p=2419 u=student n=ansible | - linux-system-roles.cockpit, (unknown version)
+2022-12-08 08:29:07,543 p=2419 u=student n=ansible | - linux-system-roles.crypto_policies, (unknown version)
+2022-12-08 08:29:07,544 p=2419 u=student n=ansible | - linux-system-roles.firewall, (unknown version)
+2022-12-08 08:29:07,545 p=2419 u=student n=ansible | - linux-system-roles.ha_cluster, (unknown version)
+2022-12-08 08:29:07,545 p=2419 u=student n=ansible | - linux-system-roles.kdump, (unknown version)
+2022-12-08 08:29:07,546 p=2419 u=student n=ansible | - linux-system-roles.kernel_settings, (unknown version)
+2022-12-08 08:29:07,546 p=2419 u=student n=ansible | - linux-system-roles.logging, (unknown version)
+2022-12-08 08:29:07,547 p=2419 u=student n=ansible | - linux-system-roles.metrics, (unknown version)
+2022-12-08 08:29:07,547 p=2419 u=student n=ansible | - linux-system-roles.nbde_client, (unknown version)
+2022-12-08 08:29:07,548 p=2419 u=student n=ansible | - linux-system-roles.nbde_server, (unknown version)
+2022-12-08 08:29:07,549 p=2419 u=student n=ansible | - linux-system-roles.network, (unknown version)
+2022-12-08 08:29:07,549 p=2419 u=student n=ansible | - linux-system-roles.postfix, (unknown version)
+2022-12-08 08:29:07,550 p=2419 u=student n=ansible | - linux-system-roles.selinux, (unknown version)
+2022-12-08 08:29:07,550 p=2419 u=student n=ansible | - linux-system-roles.ssh, (unknown version)
+2022-12-08 08:29:07,551 p=2419 u=student n=ansible | - linux-system-roles.sshd, (unknown version)
+2022-12-08 08:29:07,552 p=2419 u=student n=ansible | - linux-system-roles.storage, (unknown version)
+2022-12-08 08:29:07,552 p=2419 u=student n=ansible | - linux-system-roles.timesync, (unknown version)
+2022-12-08 08:29:07,553 p=2419 u=student n=ansible | - linux-system-roles.tlog, (unknown version)
+2022-12-08 08:29:07,554 p=2419 u=student n=ansible | - linux-system-roles.vpn, (unknown version)
+2022-12-08 08:29:07,554 p=2419 u=student n=ansible | - rhel-system-roles.certificate, (unknown version)
+2022-12-08 08:29:07,555 p=2419 u=student n=ansible | - rhel-system-roles.cockpit, (unknown version)
+2022-12-08 08:29:07,555 p=2419 u=student n=ansible | - rhel-system-roles.crypto_policies, (unknown version)
+2022-12-08 08:29:07,556 p=2419 u=student n=ansible | - rhel-system-roles.firewall, (unknown version)
+2022-12-08 08:29:07,556 p=2419 u=student n=ansible | - rhel-system-roles.ha_cluster, (unknown version)
+2022-12-08 08:29:07,557 p=2419 u=student n=ansible | - rhel-system-roles.kdump, (unknown version)
+2022-12-08 08:29:07,557 p=2419 u=student n=ansible | - rhel-system-roles.kernel_settings, (unknown version)
+2022-12-08 08:29:07,558 p=2419 u=student n=ansible | - rhel-system-roles.logging, (unknown version)
+2022-12-08 08:29:07,559 p=2419 u=student n=ansible | - rhel-system-roles.metrics, (unknown version)
+2022-12-08 08:29:07,559 p=2419 u=student n=ansible | - rhel-system-roles.nbde_client, (unknown version)
+2022-12-08 08:29:07,560 p=2419 u=student n=ansible | - rhel-system-roles.nbde_server, (unknown version)
+2022-12-08 08:29:07,560 p=2419 u=student n=ansible | - rhel-system-roles.network, (unknown version)
+2022-12-08 08:29:07,561 p=2419 u=student n=ansible | - rhel-system-roles.postfix, (unknown version)
+2022-12-08 08:29:07,561 p=2419 u=student n=ansible | - rhel-system-roles.selinux, (unknown version)
+2022-12-08 08:29:07,562 p=2419 u=student n=ansible | - rhel-system-roles.ssh, (unknown version)
+2022-12-08 08:29:07,563 p=2419 u=student n=ansible | - rhel-system-roles.sshd, (unknown version)
+2022-12-08 08:29:07,563 p=2419 u=student n=ansible | - rhel-system-roles.storage, (unknown version)
+2022-12-08 08:29:07,564 p=2419 u=student n=ansible | - rhel-system-roles.timesync, (unknown version)
+2022-12-08 08:29:07,565 p=2419 u=student n=ansible | - rhel-system-roles.tlog, (unknown version)
+2022-12-08 08:29:07,565 p=2419 u=student n=ansible | - rhel-system-roles.vpn, (unknown version)
+2022-12-08 08:29:07,565 p=2419 u=student n=ansible | # /etc/ansible/roles
+2022-12-08 13:41:50,259 p=16 u=root n=ansible | {"/home/student/police/collections/ansible_collections": {"geerlingguy.php_roles": {"version": "2.0.0"}, "community.general": {"version": "6.1.0"}}}
+2022-12-08 13:41:52,019 p=21 u=root n=ansible | playbook: /home/student/police/check_mode.yml
+2022-12-08 13:41:52,020 p=21 u=root n=ansible |   play #1 (servera): Check Mode Playbook	TAGS: []
+2022-12-08 13:41:52,021 p=21 u=root n=ansible |     tasks:
+      Install firewalld package	TAGS: []
+      Create a user	TAGS: []
+      Install web package	TAGS: []
+      Start the service	TAGS: []
+
+2022-12-08 13:41:58,060 p=16 u=root n=ansible | {"/home/student/police/collections/ansible_collections": {"geerlingguy.php_roles": {"version": "2.0.0"}, "community.general": {"version": "6.1.0"}}}
+2022-12-08 13:41:59,440 p=21 u=root n=ansible | PLAY [Check Mode Playbook] *********************************************************************
+2022-12-08 13:41:59,471 p=21 u=root n=ansible | TASK [Gathering Facts] *************************************************************************
+2022-12-08 13:42:01,174 p=21 u=root n=ansible | ok: [servera]
+2022-12-08 13:42:01,201 p=21 u=root n=ansible | TASK [Install firewalld package] ***************************************************************
+2022-12-08 13:42:02,479 p=21 u=root n=ansible | ok: [servera]
+2022-12-08 13:42:02,493 p=21 u=root n=ansible | TASK [Create a user] ***************************************************************************
+2022-12-08 13:42:03,151 p=21 u=root n=ansible | changed: [servera]
+2022-12-08 13:42:03,166 p=21 u=root n=ansible | TASK [Install web package] *********************************************************************
+2022-12-08 13:42:04,186 p=21 u=root n=ansible | changed: [servera]
+2022-12-08 13:42:04,203 p=21 u=root n=ansible | TASK [Start the service] ***********************************************************************
+2022-12-08 13:42:05,102 p=21 u=root n=ansible | fatal: [servera]: FAILED! => {"changed": false, "msg": "Could not find the requested service httpd: host"}
+2022-12-08 13:42:05,105 p=21 u=root n=ansible | PLAY RECAP *************************************************************************************
+2022-12-08 13:42:05,105 p=21 u=root n=ansible | servera                    : ok=4    changed=2    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2022-12-08 13:43:13,071 p=16 u=root n=ansible | {"/home/student/police/collections/ansible_collections": {"geerlingguy.php_roles": {"version": "2.0.0"}, "community.general": {"version": "6.1.0"}}}
+2022-12-08 13:43:14,440 p=21 u=root n=ansible | PLAY [Check Mode Playbook] *********************************************************************
+2022-12-08 13:43:32,621 p=21 u=root n=ansible | Perform task: TASK: Gathering Facts (N)o/(y)es/(c)ontinue: *************************************
+2022-12-08 13:43:38,621 p=21 u=root n=ansible | Perform task: TASK: Install firewalld package (N)o/(y)es/(c)ontinue: ***************************
+2022-12-08 13:43:38,621 p=21 u=root n=ansible | TASK [Install firewalld package] ***************************************************************
+2022-12-08 13:43:40,212 p=21 u=root n=ansible | ok: [servera]
+2022-12-08 13:43:45,605 p=21 u=root n=ansible | Perform task: TASK: Create a user (N)o/(y)es/(c)ontinue: ***************************************
+2022-12-08 13:43:45,606 p=21 u=root n=ansible | TASK [Create a user] ***************************************************************************
+2022-12-08 13:43:46,262 p=21 u=root n=ansible | changed: [servera]
+2022-12-08 13:44:44,436 p=21 u=root n=ansible | Perform task: TASK: Install web package (N)o/(y)es/(c)ontinue: *********************************
+2022-12-08 13:44:44,436 p=21 u=root n=ansible | TASK [Install web package] *********************************************************************
+2022-12-08 13:44:47,657 p=21 u=root n=ansible | changed: [servera]
+2022-12-08 13:45:01,283 p=21 u=root n=ansible | Perform task: TASK: Start the service (N)o/(y)es/(c)ontinue: ***********************************
+2022-12-08 13:45:01,284 p=21 u=root n=ansible | TASK [Start the service] ***********************************************************************
+2022-12-08 13:45:02,906 p=21 u=root n=ansible | changed: [servera]
+2022-12-08 13:45:02,927 p=21 u=root n=ansible | PLAY RECAP *************************************************************************************
+2022-12-08 13:45:02,927 p=21 u=root n=ansible | servera                    : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2022-12-08 13:47:33,300 p=16 u=root n=ansible | {"/home/student/police/collections/ansible_collections": {"geerlingguy.php_roles": {"version": "2.0.0"}, "community.general": {"version": "6.1.0"}}}
+2022-12-08 13:47:34,660 p=21 u=root n=ansible | PLAY [Check Mode Playbook] *********************************************************************
+2022-12-08 13:47:36,129 p=21 u=root n=ansible | Perform task: TASK: Gathering Facts (N)o/(y)es/(c)ontinue: *************************************
+2022-12-08 13:47:36,130 p=21 u=root n=ansible | TASK [Gathering Facts] *************************************************************************
+2022-12-08 13:47:37,830 p=21 u=root n=ansible | ok: [servera]
+2022-12-08 13:47:39,601 p=21 u=root n=ansible | Perform task: TASK: Create a user (N)o/(y)es/(c)ontinue: ***************************************
+2022-12-08 13:47:39,602 p=21 u=root n=ansible | TASK [Create a user] ***************************************************************************
+2022-12-08 13:47:40,261 p=21 u=root n=ansible | changed: [servera]
+2022-12-08 13:51:09,913 p=21 u=root n=ansible |  [ERROR]: User interrupted execution
+
+2022-12-08 13:51:38,299 p=16 u=root n=ansible | {"/home/student/police/collections/ansible_collections": {"geerlingguy.php_roles": {"version": "2.0.0"}, "community.general": {"version": "6.1.0"}}}
+2022-12-08 13:51:39,655 p=21 u=root n=ansible | PLAY [Temaplte Information] ********************************************************************
+2022-12-08 13:51:39,673 p=21 u=root n=ansible | TASK [Gathering Facts] *************************************************************************
+2022-12-08 13:51:41,816 p=21 u=root n=ansible | ok: [172.25.250.12]
+2022-12-08 13:51:42,009 p=21 u=root n=ansible | ok: [workstation]
+2022-12-08 13:51:42,545 p=21 u=root n=ansible | ok: [serverd]
+2022-12-08 13:51:42,580 p=21 u=root n=ansible | ok: [172.25.250.13]
+2022-12-08 13:51:43,988 p=21 u=root n=ansible | ok: [serverc]
+2022-12-08 13:51:44,150 p=21 u=root n=ansible | ok: [Web_Server_OSLO_1]
+2022-12-08 13:51:44,187 p=21 u=root n=ansible | ok: [servera]
+2022-12-08 13:51:44,205 p=21 u=root n=ansible | ok: [serverb]
+2022-12-08 13:51:44,236 p=21 u=root n=ansible | TASK [Collect Info from Systems] ***************************************************************
+2022-12-08 13:51:44,264 p=21 u=root n=ansible | skipping: [serverd]
+2022-12-08 13:51:44,307 p=21 u=root n=ansible | skipping: [172.25.250.12]
+2022-12-08 13:51:44,338 p=21 u=root n=ansible | skipping: [172.25.250.13]
+2022-12-08 13:51:44,365 p=21 u=root n=ansible | skipping: [Web_Server_OSLO_1]
+2022-12-08 13:51:44,396 p=21 u=root n=ansible | skipping: [servera]
+2022-12-08 13:51:44,428 p=21 u=root n=ansible | skipping: [serverb]
+2022-12-08 13:51:44,443 p=21 u=root n=ansible | skipping: [serverc]
+2022-12-08 13:51:47,192 p=21 u=root n=ansible | [0;31m--- before: /tmp/info[0m
+[0;31m[0m[0;32m+++ after: /home/runner/.ansible/tmp/ansible-local-21me5bjnoe/tmputitifjw/info_template.j2[0m
+[0;32m[0m[0;36m@@ -8,14 +8,14 @@[0m
+[0;36m[0m Hostname	= serverd
+ OS		= RedHat
+ OS Version	= 9.0
+[0;31m-Current Time	= 07:33:50[0m
+[0;31m[0m[0;32m+Current Time	= 08:51:42[0m
+[0;32m[0m IP Address	= 172.25.250.13
+ VDA Size	= 10.00 GB
+ VDB Size	= 1.00 GB
+ VDC Size	= Not VDC
+ FQDN		= serverd.lab.example.com
+ Kernel Version	= 5.14.0-70.13.1.el9_0.x86_64
+[0;31m-Free Memory	= 560[0m
+[0;31m[0m[0;32m+Free Memory	= 593[0m
+[0;32m[0m Product		= RHEL-9.0.0 PC (Q35 + ICH9, 2009)
+ Python Version	= 3.9.10
+ 
+[0;36m@@ -25,14 +25,14 @@[0m
+[0;36m[0m Hostname	= serverc
+ OS		= RedHat
+ OS Version	= 9.0
+[0;31m-Current Time	= 07:33:51[0m
+[0;31m[0m[0;32m+Current Time	= 08:51:42[0m
+[0;32m[0m IP Address	= 172.25.250.12
+ VDA Size	= 10.00 GB
+ VDB Size	= 1.00 GB
+ VDC Size	= Not VDC
+ FQDN		= serverc.lab.example.com
+ Kernel Version	= 5.14.0-70.13.1.el9_0.x86_64
+[0;31m-Free Memory	= 561[0m
+[0;31m[0m[0;32m+Free Memory	= 611[0m
+[0;32m[0m Product		= RHEL-9.0.0 PC (Q35 + ICH9, 2009)
+ Python Version	= 3.9.10
+ 
+[0;36m@@ -42,14 +42,31 @@[0m
+[0;36m[0m Hostname	= serverd
+ OS		= RedHat
+ OS Version	= 9.0
+[0;31m-Current Time	= 07:33:50[0m
+[0;31m[0m[0;32m+Current Time	= 08:51:41[0m
+[0;32m[0m IP Address	= 172.25.250.13
+ VDA Size	= 10.00 GB
+ VDB Size	= 1.00 GB
+ VDC Size	= Not VDC
+ FQDN		= serverd.lab.example.com
+ Kernel Version	= 5.14.0-70.13.1.el9_0.x86_64
+[0;31m-Free Memory	= 560[0m
+[0;31m[0m[0;32m+Free Memory	= 593[0m
+[0;32m[0m[0;32m+Product		= RHEL-9.0.0 PC (Q35 + ICH9, 2009)[0m
+[0;32m[0m[0;32m+Python Version	= 3.9.10[0m
+[0;32m[0m[0;32m+[0m
+[0;32m[0m[0;32m+[0m
+[0;32m[0m[0;32m+	## Managed Host    Web_Server_OSLO_1   ##[0m
+[0;32m[0m[0;32m+[0m
+[0;32m[0m[0;32m+Hostname	= servera[0m
+[0;32m[0m[0;32m+OS		= RedHat[0m
+[0;32m[0m[0;32m+OS Version	= 9.0[0m
+[0;32m[0m[0;32m+Current Time	= 08:51:44[0m
+[0;32m[0m[0;32m+IP Address	= 172.25.250.10[0m
+[0;32m[0m[0;32m+VDA Size	= 10.00 GB[0m
+[0;32m[0m[0;32m+VDB Size	= 1.00 GB[0m
+[0;32m[0m[0;32m+VDC Size	= Not VDC[0m
+[0;32m[0m[0;32m+FQDN		= servera.lab.example.com[0m
+[0;32m[0m[0;32m+Kernel Version	= 5.14.0-70.13.1.el9_0.x86_64[0m
+[0;32m[0m[0;32m+Free Memory	= 483[0m
+[0;32m[0m Product		= RHEL-9.0.0 PC (Q35 + ICH9, 2009)
+ Python Version	= 3.9.10
+ 
+[0;36m@@ -59,14 +76,14 @@[0m
+[0;36m[0m Hostname	= servera
+ OS		= RedHat
+ OS Version	= 9.0
+[0;31m-Current Time	= 07:33:52[0m
+[0;31m[0m[0;32m+Current Time	= 08:51:43[0m
+[0;32m[0m IP Address	= 172.25.250.10
+ VDA Size	= 10.00 GB
+ VDB Size	= 1.00 GB
+ VDC Size	= Not VDC
+ FQDN		= servera.lab.example.com
+ Kernel Version	= 5.14.0-70.13.1.el9_0.x86_64
+[0;31m-Free Memory	= 276[0m
+[0;31m[0m[0;32m+Free Memory	= 480[0m
+[0;32m[0m Product		= RHEL-9.0.0 PC (Q35 + ICH9, 2009)
+ Python Version	= 3.9.10
+ 
+[0;36m@@ -76,14 +93,14 @@[0m
+[0;36m[0m Hostname	= serverb
+ OS		= RedHat
+ OS Version	= 9.0
+[0;31m-Current Time	= 07:33:53[0m
+[0;31m[0m[0;32m+Current Time	= 08:51:45[0m
+[0;32m[0m IP Address	= 172.25.250.11
+ VDA Size	= 10.00 GB
+ VDB Size	= 1.00 GB
+ VDC Size	= Not VDC
+ FQDN		= serverb.lab.example.com
+ Kernel Version	= 5.14.0-70.13.1.el9_0.x86_64
+[0;31m-Free Memory	= 535[0m
+[0;31m[0m[0;32m+Free Memory	= 615[0m
+[0;32m[0m Product		= RHEL-9.0.0 PC (Q35 + ICH9, 2009)
+ Python Version	= 3.9.10
+ 
+[0;36m@@ -93,14 +110,14 @@[0m
+[0;36m[0m Hostname	= serverc
+ OS		= RedHat
+ OS Version	= 9.0
+[0;31m-Current Time	= 07:33:53[0m
+[0;31m[0m[0;32m+Current Time	= 08:51:44[0m
+[0;32m[0m IP Address	= 172.25.250.12
+ VDA Size	= 10.00 GB
+ VDB Size	= 1.00 GB
+ VDC Size	= Not VDC
+ FQDN		= serverc.lab.example.com
+ Kernel Version	= 5.14.0-70.13.1.el9_0.x86_64
+[0;31m-Free Memory	= 561[0m
+[0;31m[0m[0;32m+Free Memory	= 599[0m
+[0;32m[0m Product		= RHEL-9.0.0 PC (Q35 + ICH9, 2009)
+ Python Version	= 3.9.10
+ 
+[0;36m@@ -111,14 +128,14 @@[0m
+[0;36m[0m Hostname	= workstation
+ OS		= RedHat
+ OS Version	= 9.0
+[0;31m-Current Time	= 07:33:49[0m
+[0;31m[0m[0;32m+Current Time	= 08:51:41[0m
+[0;32m[0m IP Address	= 172.25.250.9
+ VDA Size	= 20.00 GB
+ VDB Size	= No VDB
+ VDC Size	= Not VDC
+ FQDN		= workstation.lab.example.com
+ Kernel Version	= 5.14.0-70.13.1.el9_0.x86_64
+[0;31m-Free Memory	= 1562[0m
+[0;31m[0m[0;32m+Free Memory	= 4212[0m
+[0;32m[0m Product		= RHEL-9.0.0 PC (Q35 + ICH9, 2009)
+ Python Version	= 3.9.10
+ 
+
+
+2022-12-08 13:51:47,193 p=21 u=root n=ansible | changed: [workstation]
+2022-12-08 13:51:47,222 p=21 u=root n=ansible | PLAY RECAP *************************************************************************************
+2022-12-08 13:51:47,222 p=21 u=root n=ansible | 172.25.250.12              : ok=1    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2022-12-08 13:51:47,222 p=21 u=root n=ansible | 172.25.250.13              : ok=1    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2022-12-08 13:51:47,223 p=21 u=root n=ansible | Web_Server_OSLO_1          : ok=1    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2022-12-08 13:51:47,223 p=21 u=root n=ansible | servera                    : ok=1    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2022-12-08 13:51:47,223 p=21 u=root n=ansible | serverb                    : ok=1    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2022-12-08 13:51:47,223 p=21 u=root n=ansible | serverc                    : ok=1    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2022-12-08 13:51:47,223 p=21 u=root n=ansible | serverd                    : ok=1    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2022-12-08 13:51:47,224 p=21 u=root n=ansible | workstation                : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   

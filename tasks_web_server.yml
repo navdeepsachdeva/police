@@ -1,0 +1,28 @@
+
+  - name: Install web package
+    ansible.builtin.dnf:
+      name: httpd
+      state: present
+
+  - name: Deploy the App
+    ansible.builtin.copy:
+      content: "My first Page"
+      dest: /var/www/html/index.html
+      mode: 0644
+
+  - name: Open the Web Firewall Port
+    ansible.posix.firewalld:
+      service: http
+      permanent: true
+      state: enabled
+      immediate: true
+
+  - name: Start the service
+    ansible.builtin.service:
+      name: httpd
+      state: started
+
+  - name: Curl access the website
+    ansible.builtin.uri:
+      url: http://servera.lab.example.com
+      return_content: true

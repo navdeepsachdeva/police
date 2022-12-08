@@ -1,16 +1,16 @@
 - name: This is my First Playbook
   hosts: servera
   tasks:
-    - name: Install firewalld package
-      ansible.builtin.dnf:
-        name: firewalld
-        state: present
-    
-    - name: Create a user
-      ansible.builtin.user:
-        name: thomas
-        uid: 1100
-        comment: "Last user"
+  ##     - name: Install firewalld package
+  ##       ansible.builtin.dnf:
+  ##         name: firewalld
+  ##         state: present
+  ##     
+  ##     - name: Create a user
+  ##       ansible.builtin.user:
+  ##         name: thomas
+  ##         uid: 1100
+  ##         comment: "Last user"
 
     - name: Install web package
       ansible.builtin.dnf:

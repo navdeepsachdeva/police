@@ -1,0 +1,18 @@
+
+
+	## Managed Host    {{ inventory_hostname }}   ##
+
+Hostname	= {{ ansible_facts['hostname']  }}
+OS		= {{ ansible_facts['distribution'] }}
+OS Version	= {{ ansible_facts['distribution_version']  }}
+Current Time	= {{ ansible_facts['date_time']['time']  }}
+IP Address	= {{ ansible_facts['default_ipv4']['address']  }}
+VDA Size	= {{ ansible_facts['devices']['vda']['size']  }}
+VDB Size	= {{ ansible_facts['devices']['vdb']['size'] | default("No VDB") }}
+VDC Size	= {{ ansible_facts['devices']['vdc']['size'] | default("Not VDC") }}
+FQDN		= {{ ansible_facts['fqdn']  }}
+Kernel Version	= {{ ansible_facts['kernel']  }}
+Free Memory	= {{ ansible_facts['memory_mb']['real']['free']  }}
+Product		= {{ ansible_facts['product_version']  }}
+Python Version	= {{ ansible_facts['python_version']  }}
+

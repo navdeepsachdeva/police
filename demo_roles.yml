@@ -1,0 +1,26 @@
+- name: Use the Custom Roles
+  hosts: servera
+
+
+  tasks:
+   
+    - name: One more extra task
+      ansible.builtin.command: sleep 4
+      notify:
+      - extra_handler
+    - name: Run role based on condition
+      #import_role:
+      include_role:
+        name: web_server
+      vars:
+        get_content: "Hello Everyone from PLAYYYYY"
+      #when: youme is defined
+
+  handlers:
+    - name: extra_handler
+      ansible.builtin.debug:
+        msg: "Just extra cusion"
+   
+  #roles:
+  #- role: web_server
+

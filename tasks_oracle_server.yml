@@ -1,0 +1,11 @@
+- name: Oracle database Task 1
+  command: sleep 2
+
+- name: Oracle database Task 2
+  command: sleep 2
+
+- name: Oracle database Task 3
+  command: sleep 2
+
+- name: Oracle database Task 4
+  command: sleep 2

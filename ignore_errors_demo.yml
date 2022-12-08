@@ -1,0 +1,36 @@
+- name: Deployment Playbook
+  hosts: servera
+  remote_user: devops
+  become: true
+  #ignore_errors: true
+  tasks:
+
+    - name: Create a user
+      ansible.builtin.user:
+        nameeeeeeeeeeeeeee: thomas
+        uid: 1100
+        comment: "Last user"
+      ignore_errors: true
+
+    - name: Install web package
+      ansible.builtin.dnf:
+        name: httpddddddddddd
+        state: present
+
+    - name: Deploy the App
+      ansible.builtin.copy:
+        content: "My first Page"
+        dest: /var/wwwwwwww/html/index.html
+        mode: 0644
+
+    - name: Open the Web Firewall Port
+      ansible.posix.firewalld:
+        service: httpppppppppppp
+        permanent: true
+        state: enabled
+        immediate: true
+
+    - name: Start the service
+      ansible.builtin.service:
+        name: httpdddddddddd
+        state: started

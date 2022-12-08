@@ -1,0 +1,13 @@
+- name: Collection use
+  hosts: servera
+  collections:
+    - geerlingguy.php_roles
+
+  roles:
+    - role: geerlingguy.php_roles.php
+    - role: geerlingguy.php_roles.php_mysql
+  tasks:
+  - name: awedfsd
+    community.general.vdo:
+      name: aaaa
+

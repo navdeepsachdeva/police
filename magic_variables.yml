@@ -1,0 +1,12 @@
+- name: Magic Variables
+  hosts: all
+  tasks:
+  - name: Print Hostname
+    debug:
+      msg: Current Host is {{ inventory_hostname }}
+    when: inventory_hostname == "workstation"
+
+  - name: Print Hostname of group
+    debug:
+      msg: Current Host is {{ inventory_hostname }}
+    when: inventory_hostname in groups["test"]

@@ -14,7 +14,7 @@
 
     - name: Deploy the App
       ansible.builtin.copy:
-        content: "My firat Page"
+        content: "My first Page"
         dest: /var/www/html/index.html
         mode: 0644
       notify:

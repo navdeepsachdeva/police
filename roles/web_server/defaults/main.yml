@@ -1,0 +1,6 @@
+---
+# defaults file for web_server
+
+get_content: "Hello Everyone from defaults"
+web_file: index.html
+info_file: info.html

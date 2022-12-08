@@ -1,0 +1,46 @@
+
+
+{# Just a Comment line #}
+
+
+{% for sys in groups["all"] %}
+{% if sys not in groups["control"] %}
+
+	## Managed Host    {{ sys }}   ##
+
+Hostname	= {{ hostvars[sys].ansible_facts['hostname']  }}
+OS		= {{ hostvars[sys].ansible_facts['distribution'] }}
+OS Version	= {{ hostvars[sys].ansible_facts['distribution_version']  }}
+Current Time	= {{ hostvars[sys].ansible_facts['date_time']['time']  }}
+IP Address	= {{ hostvars[sys].ansible_facts['default_ipv4']['address']  }}
+VDA Size	= {{ hostvars[sys].ansible_facts['devices']['vda']['size']  }}
+VDB Size	= {{ hostvars[sys].ansible_facts['devices']['vdb']['size'] | default("No VDB") }}
+VDC Size	= {{ hostvars[sys].ansible_facts['devices']['vdc']['size'] | default("Not VDC") }}
+FQDN		= {{ hostvars[sys].ansible_facts['fqdn']  }}
+Kernel Version	= {{ hostvars[sys].ansible_facts['kernel']  }}
+Free Memory	= {{ hostvars[sys].ansible_facts['memory_mb']['real']['free']  }}
+Product		= {{ hostvars[sys].ansible_facts['product_version']  }}
+Python Version	= {{ hostvars[sys].ansible_facts['python_version']  }}
+
+{% endif %}
+{% endfor %}
+
+{% for sys in groups["control"] %}
+
+	## Control Node {{ sys }}   ##
+
+Hostname	= {{ hostvars[sys].ansible_facts['hostname']  }}
+OS		= {{ hostvars[sys].ansible_facts['distribution'] }}
+OS Version	= {{ hostvars[sys].ansible_facts['distribution_version']  }}
+Current Time	= {{ hostvars[sys].ansible_facts['date_time']['time']  }}
+IP Address	= {{ hostvars[sys].ansible_facts['default_ipv4']['address']  }}
+VDA Size	= {{ hostvars[sys].ansible_facts['devices']['vda']['size']  }}
+VDB Size	= {{ hostvars[sys].ansible_facts['devices']['vdb']['size'] | default("No VDB") }}
+VDC Size	= {{ hostvars[sys].ansible_facts['devices']['vdc']['size'] | default("Not VDC") }}
+FQDN		= {{ hostvars[sys].ansible_facts['fqdn']  }}
+Kernel Version	= {{ hostvars[sys].ansible_facts['kernel']  }}
+Free Memory	= {{ hostvars[sys].ansible_facts['memory_mb']['real']['free']  }}
+Product		= {{ hostvars[sys].ansible_facts['product_version']  }}
+Python Version	= {{ hostvars[sys].ansible_facts['python_version']  }}
+
+{% endfor %}

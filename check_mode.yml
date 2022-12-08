@@ -1,0 +1,23 @@
+- name: Check Mode Playbook
+  hosts: servera
+  tasks:
+
+    
+    - name: Create a user
+      ansible.builtin.user:
+        name: thomas
+        uid: 1100
+        comment: "Last user"
+      check_mode: yes
+
+    - name: Install web package
+      ansible.builtin.dnf:
+        name: httpd
+        state: present
+      check_mode: no
+
+    - name: Start the service
+      ansible.builtin.service:
+        name: httpd
+        state: started
+      check_mode: yes

@@ -1,0 +1,24 @@
+---
+# handlers file for web_server
+
+
+  - name: Handler 3
+    ansible.builtin.debug:
+      msg: "Some Handler 3"
+
+  - name: Handler 2
+    ansible.builtin.debug:
+      msg: "Some Handler 2"
+
+  - name: Handler 1
+    ansible.builtin.debug:
+      msg: "Some Handler 1"
+
+  - name: Start the service
+    ansible.builtin.service:
+      name: httpd
+      state: restarted
+
+  - name: info_collected
+    ansible.builtin.debug:
+      msg: "facts Informqation Collcted"

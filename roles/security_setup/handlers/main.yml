@@ -1,0 +1,17 @@
+---
+# handlers file for security_setup
+
+
+  - name: security_pack_install
+    ansible.builtin.debug:
+      msg: "firewall installed"
+
+
+  - name: security_pack_opened
+    ansible.builtin.debug:
+      msg: "http opened on firewalld"
+
+  - name: restart_firewalld
+    ansible.builtin.service:
+      name: firewalld
+      state: started

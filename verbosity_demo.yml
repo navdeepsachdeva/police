@@ -1,0 +1,21 @@
+- name: Verbosity Demo Play
+  hosts: servera
+  gather_facts: no
+  tasks:
+
+    - name: Install web package
+      ansible.builtin.dnf:
+        name: httpd
+        state: present
+      register: laleh_out
+
+    - name: Print the captured output
+      debug:
+        msg: "{{ laleh_out }}"
+        verbosity: 1
+
+    - name: Start the service
+      ansible.builtin.service:
+        name: httpd
+        state: restarted
+      when: laleh_out.changed

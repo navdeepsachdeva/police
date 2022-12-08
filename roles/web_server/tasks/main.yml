@@ -1,0 +1,27 @@
+---
+# tasks file for web_server
+
+  - name: Install web package
+    ansible.builtin.dnf:
+      name: httpd
+      state: present
+    notify:
+    - Start the service
+    - Handler 1
+    
+  - name: Deploy the App
+    ansible.builtin.copy:
+      content: "{{ get_content }}"   
+      dest: /var/www/html/{{ web_file }}
+      mode: 0644
+    notify:
+    - Start the service
+    - Handler 3
+    
+  - name: Collect Info from Systems
+    template:
+      src: ./simple_template.j2
+      dest: /var/www/html/{{ info_file }}
+    notify:
+    - info_collected
+    

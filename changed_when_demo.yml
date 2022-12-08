@@ -1,0 +1,45 @@
+- name: Changed when demo
+  hosts: servera
+  gather_facts: no
+  become: true
+  tasks:
+
+    - name: Install web package
+      ansible.builtin.dnf:
+        name: httpd
+        state: present
+      register: capture
+      changed_when: not capture.changed
+      notify:
+      - Handler 1
+      - Handler 2
+
+    - name: Deploy the App
+      ansible.builtin.copy:
+        content: "My first Page"
+        dest: /var/www/html/index.html
+        mode: 0644
+      notify:
+      - Start the service
+      - Handler 3
+
+    - name: Extra Task
+      command: sleep 4
+
+  handlers:
+    - name: Handler 3
+      ansible.builtin.debug:
+        msg: "Some Handler 3"
+
+    - name: Handler 2
+      ansible.builtin.debug:
+        msg: "Some Handler 2"
+
+    - name: Handler 1
+      ansible.builtin.debug:
+        msg: "Some Handler 1"
+      
+    - name: Start the service
+      ansible.builtin.service:
+        name: httpd
+        state: restarted

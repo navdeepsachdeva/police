@@ -1,0 +1,49 @@
+- name: Deployment Playbook
+  hosts: servera
+  remote_user: devops
+  become: true
+  tasks:
+  # Always put a space after hash symbol
+  - name: Create a user
+    ansible.builtin.user:
+      name: thomas
+      uid: 1100
+      comment: "Last user"
+
+  - name: Install web package
+    ansible.builtin.dnf:
+      name: httpd
+      state: present
+
+  - name: Deploy the App
+    ansible.builtin.copy:
+      content: "My firat Page"
+      dest: /var/www/html/index.html
+      mode: 0644
+  - name: Open the Web Firewall Port
+    ansible.posix.firewalld:
+      service: http
+      permanent: true
+      state: enabled
+      immediate: true
+
+  - name: Start the service
+    ansible.builtin.service:
+      name: httpd
+      state: started
+
+- name: Testing Playbook
+  hosts: workstation
+  remote_user: student
+  become: false
+  tasks:
+    - name: Curl access the website
+      ansible.builtin.uri:
+        url: http://servera.lab.example.com
+        return_content: true
+
+    - name: Stupid Task
+      ansible.builtin.copy:
+        dest: /tmp/somefile
+        content: "something"
+        mode: 0644

@@ -1,0 +1,3 @@
+---
+# vars file for web_server
+get_content: "Hello Everyone from VARS"
